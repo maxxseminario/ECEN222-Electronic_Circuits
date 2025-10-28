@@ -40,7 +40,7 @@ This repository contains LaTeX code and course materials for ECEN 463: Digital S
 - **Language:** LaTeX
 - **Intended Audience:**
   - Undergraduate students in Electrical & Computer Engineering
-  - Graduate students
+  - Graduate students in Electrical & Computer Engineering
   - Students preparing for PhD qualifying exams
 - **Institution:** University of Nebraska–Lincoln
 
