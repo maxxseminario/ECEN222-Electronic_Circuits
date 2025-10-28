@@ -1,0 +1,190 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{array}
+
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+\usepackage{ifthen}
+\newboolean{showresults}
+\setboolean{showresults}{true}
+
+\geometry{a4paper, margin=1in}
+
+\pagestyle{empty}
+
+\title{\vspace{-1.5cm}\Large\textbf{University of Nebraska-Lincoln}\\[0.2cm]
+\Large\textbf{Digital Signal Processing: Assignment 1}} 
+\date{\vspace{-0.5cm}\small\textbf{Due Date: September 19, 2025}}
+
+\begin{document}
+
+\maketitle
+
+
+% \noindent 
+% For the following questions, assume a discrete time system denoted by $H$ that provides an input/output mapping for an input sequence $x[n]$ and an output sequence $y[n]$.
+% \\
+
+\noindent
+For each of the following input/output relations for a discrete time system, please indicate whether the system is:
+
+
+\begin{itemize}[left=0pt, labelwidth=*, align=left]
+    \item[\bf{L} or \bf{NL}:] Linear or Not Linear
+    \item[\bf{TI} or \bf{NTI}:] Time Invariant or Not Time Invariant
+    \item[\bf{C} or \bf{NC}:] Causal or Not Causal
+    \item[\bf{B} or \bf{NB}:] BIBO Stable or Not BIBO Stable
+\end{itemize}
+
+\noindent 
+If for any property it is not possible to say, then indicate this by writing \textbf{CBD} (Cannot Be Determined).
+\vspace{0.5cm}
+
+
+\ifthenelse{\not{\boolean{showresults}}}{
+\renewcommand{\arraystretch}{1.5} % Adjusts row height
+\begin{table}[h!]
+\centering
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|c|c|c|c|}
+    \hline
+    \textbf{Input/Output Relation} & \textbf{L/NL} & \textbf{TI/NTI} & \textbf{C/NC} & \textbf{B/NB} \\
+    \hline
+    $y[n] = 7x[n+2]$ & & & & \\
+    \hline
+    $y[n] = x[n] - 4x[n-5] + 3x[n-15]$ & & & & \\
+    \hline
+    $y[n] = \dfrac{x[n-4]}{x[n]+8}$ & & & & \\
+    \hline
+    $y[n] = x[n] + (x[n-3])^{-1} + \cos(n+4)$ & & & & \\
+    \hline
+    $y[n] = \operatorname{med}\{x[n+2], x[n], x[n-2]\}$ & & & & \\
+    \hline
+    $y[n] = x[1] + \sum_{k=-\infty}^n x[k]$ & & & & \\
+    \hline
+    $y[n] = \dfrac{1}{5} \sum_{k=n-4}^{n+6} x[k]$ & & & & \\
+    \hline
+    $y[n] = \sum_{k=0}^{\infty} h[k]x[n-2k]$ & & & & \\
+    \hline
+    $y[n] = \sum_{k=2}^{n+4} x[k]\left(\dfrac{3}{5}\right)^k$ & & & & \\
+    \hline
+    $y[n] = \sum_{k=3}^{n} x[k]\left(\dfrac{2}{k}\right)(-1)^k$ & & & & \\
+    \hline
+\end{tabularx}
+\caption{Table of Input/Output Relations}
+\end{table}
+}{}
+
+
+
+\ifthenelse{\boolean{showresults}}{
+
+\renewcommand{\arraystretch}{1.5} 
+\begin{table}[h!]
+\centering
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|c|c|c|c|}
+    \hline
+    \textbf{Input/Output Relation} & \textbf{L/NL} & \textbf{TI/NTI} & \textbf{C/NC} & \textbf{B/NB} \\
+    \hline
+    $y[n] = 7x[n+2]$ 
+    & L    % Linear
+    & TI   % Time-Invariant
+    & NC   % Noncausal (depends on future input)
+    & B   % Not Bounded (if input unbounded, output unbounded)
+    \\
+    \hline
+    $y[n] = x[n] - 4x[n-5] + 3x[n-15]$ 
+    & L 
+    & TI 
+    & C 
+    & B 
+    \\
+    \hline
+    $y[n] = \dfrac{x[n-4]}{x[n]+8}$ 
+    & NL   % Nonlinear (division by input)
+    & TI 
+    & C 
+    & NB 
+    \\
+    \hline
+    $y[n] = x[n] + (x[n-3])^{-1} + \cos(n+4)$ 
+    & NL   % Nonlinear (inverse term)
+    & NTI  % Not time-invariant (cos(n+4) is time-varying)
+    & C 
+    & NB 
+    \\
+    \hline
+    $y[n] = \operatorname{med}\{x[n+2], x[n], x[n-2]\}$ 
+    & NL   % Median is nonlinear
+    & TI 
+    & NC   % Depends on future input (x[n+2])
+    & B    % Bounded if input is bounded
+    \\
+    \hline
+    $y[n] = x[1] + \sum_{k=-\infty}^n x[k]$ 
+    & L 
+    & NTI 
+    & NC   % Depends on x[1] regardless of n (noncausal for n < 1)
+    & NB   % The sum can diverge
+    \\
+    \hline
+    $y[n] = \dfrac{1}{5} \sum_{k=n-4}^{n+6} x[k]$ 
+    & L 
+    & TI 
+    & NC   % Needs future input up to n+6
+    & B    % Bounded if input is bounded
+    \\
+    \hline
+    $y[n] = \sum_{k=0}^{\infty} h[k]x[n-2k]$ 
+    & L 
+    & TI 
+    & C    % Only depends on present and past (if h[k]=0 for large k, otherwise could be debated)
+    & NB   % If h[k] or x[n] is unbounded, sum can diverge
+    \\
+    \hline
+    $y[n] = \sum_{k=2}^{n+4} x[k]\left(\dfrac{3}{5}\right)^k$ 
+    & L 
+    & NTI  % Upper limit depends on n
+    & NC   % Depends on future input up to n+4
+    & B   % Not necessarily bounded if x[k] is not bounded
+    \\
+    \hline
+    $y[n] = \sum_{k=3}^{n} x[k]\left(\dfrac{2}{k}\right)(-1)^k$ 
+    & L 
+    & NTI   % Limits only depend on n, but summand does not depend on n directly
+    & C    % Only depends on present and past
+    & NB   % Again, not necessarily bounded if x[k] is not bounded
+    \\
+    \hline
+\end{tabularx}
+\caption{Classification of Input/Output Relations with Properties}
+\end{table}
+
+
+
+}{}
+
+
+
+
+\noindent \textbf{Notes:}
+\begin{enumerate}[left=0pt, labelwidth=*, align=left]
+    \item In our notation, if the upper limit of a summation is higher than or equal to the lower limit, a summation occurs; otherwise, the summation returns a zero.
+    \item Assume $|h[n]|$ is bounded for all $n$.
+    \item $\operatorname{med}\{\}$ returns the median of three values -- e.g., $\operatorname{med}\{7, -3, 10\} = 7$.
+    \item Attach any work you did to obtain your answers. You can either show that the relation meets our definition, or show a counter-example that shows the relation does not. 
+\end{enumerate}
+
+\vfill
+
+\end{document}

@@ -1,7 +1,0 @@
-\babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Review}{11}{0}{2}
-\beamer@subsectionintoc {2}{1}{Discrete-Time Signals and Systems}{12}{0}{2}
-\beamer@subsectionintoc {2}{2}{The Discrete-Time Fourier Transform}{26}{0}{2}
-\beamer@subsectionintoc {2}{3}{The $z$-Transform}{34}{0}{2}
-\beamer@subsectionintoc {2}{4}{Difference Equations}{44}{0}{2}
