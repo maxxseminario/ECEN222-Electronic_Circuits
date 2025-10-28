@@ -1,8 +1,8 @@
-PWD c:/Users/mseminario2/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/ms_lecture02_discrete_time_systems
+PWD c:/Users/Maxx Seminario/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/ms_lecture02_discrete_time_systems
 INPUT c:/texlive/2025/texmf.cnf
 INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/mseminario2/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/ms_lecture02_discrete_time_systems/ms_lecture02_discrete_time_systems.tex
+INPUT c:/Users/Maxx Seminario/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/ms_lecture02_discrete_time_systems/ms_lecture02_discrete_time_systems.tex
 OUTPUT ms_lecture02_discrete_time_systems.log
 INPUT c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls

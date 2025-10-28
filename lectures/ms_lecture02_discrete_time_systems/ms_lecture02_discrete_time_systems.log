@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.2)  2 SEP 2025 12:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.29)  24 OCT 2025 12:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/mseminario2/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/ms_lecture02_discrete_time_systems/ms_lecture02_discrete_time_systems.tex
-(c:/Users/mseminario2/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/ms_lecture02_discrete_time_systems/ms_lecture02_discrete_time_systems.tex
+**"c:/Users/Maxx Seminario/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/ms_lecture02_discrete_time_systems/ms_lecture02_discrete_time_systems.tex"
+(c:/Users/Maxx Seminario/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/ms_lecture02_discrete_time_systems/ms_lecture02_discrete_time_systems.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-07-20>
+L3 programming layer <2025-07-19>
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2025/06/15 v3.74 A class for typesetting presentations
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1417,6 +1417,30 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [25
 
 ]
+
+[26
+
+]
+
+[27
+
+]
+
+[28
+
+]
+
+[29
+
+]
+
+[30
+
+]
+
+[31
+
+]
 \tf@nav=\write6
 \openout6 = `ms_lecture02_discrete_time_systems.nav'.
 
@@ -1429,24 +1453,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  (./ms_lecture02_discrete_time_systems.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-07-20>
+L3 programming layer <2025-07-19>
  ***********
 Package rerunfilecheck Info: File `ms_lecture02_discrete_time_systems.out' has not changed.
 (rerunfilecheck)             Checksum: A37ADA8221D571A773FE0D6EFD9C2A4F;558.
  ) 
 Here is how much of TeX's memory you used:
- 38899 strings out of 467801
- 919100 string characters out of 5436090
- 1399521 words of memory out of 5000000
- 66729 multiletter control sequences out of 15000+600000
+ 38923 strings out of 467815
+ 919321 string characters out of 5436410
+ 1399223 words of memory out of 5000000
+ 66727 multiletter control sequences out of 15000+600000
  641162 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,123p,879b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,123p,884b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on ms_lecture02_discrete_time_systems.pdf (25 pages, 270112 bytes).
+Output written on ms_lecture02_discrete_time_systems.pdf (31 pages, 284199 bytes).
 PDF statistics:
- 478 PDF objects out of 1000 (max. 8388607)
- 395 compressed objects within 4 object streams
- 57 named destinations out of 1000 (max. 500000)
+ 554 PDF objects out of 1000 (max. 8388607)
+ 464 compressed objects within 5 object streams
+ 69 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

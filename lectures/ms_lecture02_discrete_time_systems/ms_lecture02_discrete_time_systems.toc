@@ -2,6 +2,6 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Memory}{9}{0}{2}
 \beamer@sectionintoc {3}{Linearity}{10}{0}{3}
-\beamer@sectionintoc {4}{Time-Invariance}{16}{0}{4}
-\beamer@sectionintoc {5}{Causality}{19}{0}{5}
-\beamer@sectionintoc {6}{Stability}{23}{0}{6}
+\beamer@sectionintoc {4}{Time-Invariance}{20}{0}{4}
+\beamer@sectionintoc {5}{Causality}{23}{0}{5}
+\beamer@sectionintoc {6}{Stability}{28}{0}{6}
