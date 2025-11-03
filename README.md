@@ -1,4 +1,3 @@
-![Cover Image](./assets/cover_image.png)
 # Digital Signal Processing Course – University of Nebraska–Lincoln
 
 **Author:** Maxx Seminario   
