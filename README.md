@@ -32,7 +32,11 @@ This repository contains LaTeX code and course materials for ECEN 463: Digital S
   Homework and project assignments for the course.
 
 - **quiz/**  
-  Quiz materials and practice problems.
+  Quiz materials and practice problems.  
+  *Quizzes may be compiled with `showresults = true` to include solutions with the results.*
+
+- **docs/**
+  All compiled pdf documents of the course.
 
 ---
 
