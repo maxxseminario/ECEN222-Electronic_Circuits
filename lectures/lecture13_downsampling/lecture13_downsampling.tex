@@ -61,14 +61,13 @@
   \titlepage
 \end{frame}
 
-\begin{frame}{Downsampling: Motivation and Key Ideas}
+\begin{frame}{Downsampling: Motivation}
 \small
 \textbf{Why downsample?}
 \begin{itemize}
   \item Reduce computation, memory, bandwidth, and power.
   \item Match device/IO rate constraints (sensors, radios, codecs).
-  \item Enable multirate algorithms, filter banks, and pyramids.
-  \item Coarser-time analysis or stage-wise processing at lower rates.
+  \item Enable multirate algorithms, filter banks.
 \end{itemize}
 
 \vspace{0.2cm}
@@ -80,8 +79,7 @@ Equivalent to sampling the bandlimited reconstruction \(x_c(t)\) with period \(T
 
 \end{frame}
 
-
-\begin{frame}{Downsampling: When is it Alias-Free?}
+\begin{frame}{Downsampling: Aliasing Considerations}
 
 \textbf{When is it alias-free?}
 \begin{itemize}
@@ -120,8 +118,6 @@ Equivalent to sampling the bandlimited reconstruction \(x_c(t)\) with period \(T
 \end{tikzpicture}
 \end{center}
 \end{frame}
-
-
 
 \section{Frequency-Domain Analysis}
 
@@ -176,6 +172,7 @@ Recognize inner sum as \(X\big(e^{j(\omega/M - 2\pi i/M)}\big)\). Therefore:
 \boxed{X_d(e^{j\omega}) = \frac{1}{M} \sum_{i=0}^{M-1} X\!\left(e^{j(\omega/M - 2\pi i/M)}\right)}
 \]
 \end{frame}
+
 \begin{frame}{Downsampling Example: $M=2$ (No Aliasing)}
 \small
 Setup: Original sampling rate is twice the minimum Nyquist rate; bandwidth fits after compression.
@@ -307,6 +304,7 @@ Setup: Compression factor too large, spectral copies overlap.
 \end{frame}
 
 \section{Decimation}
+
 \begin{frame}{Decimation: Prefiltering Before Downsampling}
 \small
 Problem: If original bandwidth exceeds $\pi/M$, downsampling aliases.
@@ -348,8 +346,8 @@ After filtering, $\tilde{x}[n]$ has bandwidth $\pi/M$, so $\tilde{x}_d[n]=\tilde
 \begin{tikzpicture}[scale=0.78]
   \begin{groupplot}[
     group style={group size=3 by 1, horizontal sep=1.1cm},
-    width=4.5cm,
-    height=2.6cm,
+    width=4.8cm,
+    height=2.7cm,
     axis lines=middle,
     ymin=0, ymax=1.15,
     tick label style={font=\scriptsize},
@@ -357,6 +355,7 @@ After filtering, $\tilde{x}[n]$ has bandwidth $\pi/M$, so $\tilde{x}_d[n]=\tilde
     title style={font=\scriptsize}
   ]
 
+  % 1) Ideal LPF with vertical cutoffs at ±π/3
   \nextgroupplot[
     title={$\tilde{H}_d(e^{j\omega})$},
     xmin=-3.4, xmax=3.4,
@@ -364,25 +363,50 @@ After filtering, $\tilde{x}[n]$ has bandwidth $\pi/M$, so $\tilde{x}_d[n]=\tilde
     xticklabels={$-\pi$,$-\pi/3$,$0$,$\pi/3$,$\pi$},
     xlabel={$\omega$}
   ]
-  \addplot[red, very thick] coordinates {(-3.4,0) (-3.1416,0) (-1.0472,1) (1.0472,1) (3.1416,0) (3.4,0)};
+  \addplot[red, very thick] coordinates {
+    (-3.4,0) (-3.1416,0)
+    (-1.0472,0) (-1.0472,1)
+    ( 1.0472,1) ( 1.0472,0)
+    ( 3.1416,0) ( 3.4,0)
+  };
 
+  % 2) Filtered X: original had energy to ±π/2 (triangular),
+  %    after LPF it is zeroed above ±π/3.
+  %    Show as a "trapezoid-like" outline: verticals at ±π/3 and a triangular top
   \nextgroupplot[
-    title={$\tilde{X}(e^{j\omega})$},
+    title={$\tilde{X}(e^{j\omega})$ (cut at $\pm\pi/3$)},
     xmin=-3.4, xmax=3.4,
     xtick={-1.0472,0,1.0472},
-    xticklabels={$-\pi/3$,$0$,$\pi/3$}, % FIXED: added '=' after 'xticklabels'
+    xticklabels={$-\pi/3$,$0$,$\pi/3$},
     xlabel={$\omega$}
   ]
-  \addplot[blue, very thick] coordinates {(-3.4,0) (-1.0472,0) (0,1) (1.0472,0) (3.4,0)};
+  % Original (pre-filter) triangular spectrum to ±π/2 (faint, dashed for context)
+  \addplot[blue!50, dashed, very thick] coordinates {(-3.4,0) (-1.5708,0) (0,1) (1.5708,0) (3.4,0)};
+  % Vertical cutoffs at ±π/3 (drop to 0 outside passband)
+  \addplot[blue, very thick] coordinates {(-1.0472,0) (-1.0472,0.3333)};
+  \addplot[blue, very thick] coordinates {( 1.0472,0.3333) ( 1.0472,0)};
+  % Triangular top within passband: value 1 at 0, value 1/3 at ±π/3
+  \addplot[blue, very thick] coordinates {(-1.0472,0.3333) (0,1) (1.0472,0.3333)};
+  % Guides at ±π/3 and ±π/2
+  \draw[red!60, dotted] (axis cs:-1.0472,0) -- (axis cs:-1.0472,1.05);
+  \draw[red!60, dotted] (axis cs: 1.0472,0) -- (axis cs: 1.0472,1.05);
+  \draw[gray!60, dotted] (axis cs:-1.5708,0) -- (axis cs:-1.5708,1.05);
+  \draw[gray!60, dotted] (axis cs: 1.5708,0) -- (axis cs: 1.5708,1.05);
 
+  % 3) Downsampled by M=3: \tilde{X}_d(ω) = (1/3) \tilde{X}(ω/3)
+  %    Bandwidth stretches to ±π, apex scales to 1/3, edges at ±π are 1/9.
   \nextgroupplot[
-    title={$\tilde{X}_d(e^{j\omega}),\,M=3$},
+    title={$\tilde{X}_d(e^{j\omega}) = \tfrac{1}{3}\tilde{X}(e^{j\omega/3})$ (downsample by 3)},
     xmin=-3.4, xmax=3.4,
     xtick={-3.1416,0,3.1416},
     xticklabels={$-\pi$,$0$,$\pi$},
     xlabel={$\omega$}
   ]
-  \addplot[blue, very thick] coordinates {(-3.4,0) (-3.1416,0) (0,0.33) (3.1416,0) (3.4,0)};
+  % Triangular top from (-π, 1/9) to (0, 1/3) to (π, 1/9)
+  \addplot[blue, very thick] coordinates {(-3.1416,0.1111) (0,0.3333) (3.1416,0.1111)};
+  % Optional guides
+  \draw[red!60, dotted] (axis cs:-3.1416,0) -- (axis cs:-3.1416,1.05);
+  \draw[red!60, dotted] (axis cs: 3.1416,0) -- (axis cs: 3.1416,1.05);
   \node[green!50!black, font=\scriptsize] at (axis cs:0,-0.25) {No aliasing};
   \end{groupplot}
 \end{tikzpicture}
@@ -390,8 +414,8 @@ After filtering, $\tilde{x}[n]$ has bandwidth $\pi/M$, so $\tilde{x}_d[n]=\tilde
 
 Notes:
 \begin{itemize}
-    \item $\tilde{x}_d[n] \neq x[nM]$; it is from the filtered version.
-    \item Trade-off: reduced bandwidth for alias-free rate reduction.
+    \item Original $X(e^{j\omega})$ (triangular to $\pm\pi/2$) is truncated by the ideal LPF to $\pm\pi/3$, producing vertical cutoffs and a triangular top peaking at 1.
+    \item Downsampling by $M=3$ yields $\tilde{X}_d(e^{j\omega})=\frac{1}{3}\tilde{X}(e^{j\omega/3})$: bandwidth expands to $\pm\pi$, apex is $1/3$.
 \end{itemize}
 \end{frame}
 
@@ -418,13 +442,6 @@ X_d(e^{j\omega}) = \frac{1}{M}\sum_{i=0}^{M-1} X\!\left(e^{j(\omega/M - 2\pi i/M
 
 If violated: prefilter to bandwidth \(\pi/M\) before rate reduction.
 
-\textbf{Applications}:
-\begin{itemize}
-    \item Audio/video sample-rate conversion
-    \item Multirate filter banks
-    \item Computational load reduction
-    \item Data compression pipelines
-\end{itemize}
 \end{frame}
 
 \end{document}
