@@ -1,0 +1,405 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{shapes,arrows,positioning,calc}
+
+\geometry{margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Parametric Resonator Design}
+\lhead{DSP HW2  - maxxseminario}
+\cfoot{\thepage}
+
+% MATLAB code styling
+\lstset{
+    language=Matlab,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!60!black},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{gray!10},
+    frame=single,
+    rulecolor=\color{black},
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=2
+}
+
+% Define block diagram styles
+\tikzstyle{block} = [draw, fill=blue!20, rectangle, minimum height=3em, minimum width=6em]
+\tikzstyle{sum} = [draw, fill=blue!20, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+\title{DSP HW2 Part 2: Digital Parametric Resonators}
+\author{Maxx Seminaio}
+\date{October 12, 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+A parametric resonator is a second-order digital filter designed to produce sustained oscillations at a specific frequency when excited by a brief input signal. These filters are used as blocks in digital audio synthesis and can simulate the resonant behavior of physical instruments.
+
+
+
+% \begin{figure}[h!]
+% \centering
+% \begin{tikzpicture}[auto, node distance=2cm,>=latex']
+%     % Input and output nodes
+%     \node [input, name=input] {};
+%     \node [block, right of=input] (gain) {$G$};
+%     \node [sum, right of=gain, node distance=3cm] (sum1) {$+$};
+%     \node [block, right of=sum1, node distance=3cm] (delay1) {$z^{-1}$};
+%     \node [sum, below of=delay1] (sum2) {$+$};
+%     \node [block, below of=sum2] (delay2) {$z^{-1}$};
+%     \node [output, right of=delay1, node distance=3cm] (output) {};
+    
+%     % Feedback paths
+%     \node [block, left of=sum2, node distance=3cm] (a1) {$-a_1$};
+%     \node [block, below of=a1] (a2) {$-a_2$};
+    
+%     % Draw connections
+%     \draw [->] (input) -- node {$x[n]$} (gain);
+%     \draw [->] (gain) -- (sum1);
+%     \draw [->] (sum1) -- (delay1);
+%     \draw [->] (delay1) -- node [name=y] {$y[n]$} (output);
+%     \draw [->] (delay1) -- (sum2);
+%     \draw [->] (sum2) -- (delay2);
+    
+%     % Feedback connections
+%     \draw [->] (delay1) -- ++(0,-1) -| (a1);
+%     \draw [->] (a1) -- (sum1);
+%     \draw [->] (delay2) -- ++(-2,0) |- (a2);
+%     \draw [->] (a2) -- ++(1.5,0) |- (sum1);
+    
+%     % Labels
+%     \node [above of=sum1, node distance=0.7cm] {$w[n]$};
+%     \node [right of=delay1, node distance=1.5cm] {$w[n-1]$};
+%     \node [right of=delay2, node distance=1.5cm] {$w[n-2]$};
+    
+% \end{tikzpicture}
+% \caption{Direct Form II implementation of second-order resonator}
+% \label{fig:direct_form_ii}
+% \end{figure}
+
+\section{Mathematical Derivation}
+
+\subsection{Time Domain Difference Equation}
+
+A second-order digital resonator can be described by the following difference equation:
+
+\begin{equation}
+y[n] = b_0 x[n] - a_1 y[n-1] - a_2 y[n-2]
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $x[n]$ is the input signal
+    \item $y[n]$ is the output signal
+    \item $b_0$ is the feedforward coefficient
+    \item $a_1, a_2$ are the feedback coefficients
+\end{itemize}
+
+
+The difference equation $y[n] = Gx[n] - a_1 y[n-1] - a_2 y[n-2]$ creates oscillations because it implements a \textbf{digital memory system with delayed feedback}. When you input a brief pulse, the system ``remembers'' its recent outputs through the $y[n-1]$ and $y[n-2]$ terms, and the carefully chosen coefficients $a_1$ and $a_2$ cause these delayed versions to reinforce each other in a periodic pattern that naturally 'rings' at the designed frequency. 
+
+\subsection{Z-Transform and Transfer Function}
+
+Taking the z-transform of equation (1):
+
+\begin{equation}
+Y(z) = b_0 X(z) - a_1 z^{-1} Y(z) - a_2 z^{-2} Y(z)
+\end{equation}
+
+Rearranging to solve for the transfer function:
+
+\begin{equation}
+Y(z)[1 + a_1 z^{-1} + a_2 z^{-2}] = b_0 X(z)
+\end{equation}
+
+\begin{equation}
+H(z) = \frac{Y(z)}{X(z)} = \frac{b_0}{1 + a_1 z^{-1} + a_2 z^{-2}}
+\end{equation}
+
+\subsection{Pole Placement for Resonance}
+
+To create a resonator at frequency $\omega_0$ with decay factor $R$, we place complex conjugate poles at:
+
+\begin{equation}
+p_{1,2} = R e^{\pm j\omega_0}
+\end{equation}
+
+The denominator polynomial with these poles is:
+
+\begin{align}
+D(z) &= (1 - R e^{j\omega_0} z^{-1})(1 - R e^{-j\omega_0} z^{-1}) \\
+&= 1 - R(e^{j\omega_0} + e^{-j\omega_0})z^{-1} + R^2 z^{-2} \\
+&= 1 - 2R\cos(\omega_0)z^{-1} + R^2 z^{-2}
+\end{align}
+
+Therefore, the coefficients are:
+\begin{align}
+a_1 &= -2R\cos(\omega_0) \\
+a_2 &= R^2
+\end{align}
+
+\subsection{Frequency Domain Analysis}
+
+The frequency response is obtained by substituting $z = e^{j\omega}$:
+
+\begin{equation}
+H(e^{j\omega}) = \frac{b_0}{1 + a_1 e^{-j\omega} + a_2 e^{-j2\omega}}
+\end{equation}
+
+Substituting our coefficients:
+
+\begin{equation}
+H(e^{j\omega}) = \frac{b_0}{1 - 2R\cos(\omega_0)e^{-j\omega} + R^2 e^{-j2\omega}}
+\end{equation}
+
+\subsection{Gain Normalization}
+
+To ensure unity gain at the resonant frequency $\omega_0$, we set:
+
+\begin{equation}
+|H(e^{j\omega_0})| = 1
+\end{equation}
+
+The magnitude at resonance is:
+
+\begin{equation}
+|H(e^{j\omega_0})| = \frac{b_0}{|1 - 2R\cos(\omega_0)e^{-j\omega_0} + R^2 e^{-j2\omega_0}|}
+\end{equation}
+
+After algebraic manipulation, the normalization factor is:
+
+\begin{equation}
+b_0 = G = (1-R)\sqrt{1 - 2R\cos(2\omega_0) + R^2}
+\end{equation}
+
+\subsection{Digital Frequency Conversion}
+
+For a desired analog frequency $f$ Hz and sampling rate $F_s$:
+
+\begin{equation}
+\omega_0 = \frac{2\pi f}{F_s}
+\end{equation}
+
+\section{MATLAB Implementation}
+
+\subsection{Resonator Coefficient Function}
+
+\begin{lstlisting}[caption=res\_coeffs.m - Resonator coefficient generator]
+function [a, b] = res_coeffs(freq, R, Fs)
+    % RES_COEFFS Generate coefficients for parametric resonator
+    %
+    % Inputs:
+    %   freq - Desired resonant frequency in Hz
+    %   R    - Pole radius (0 < R < 1), controls decay rate
+    %   Fs   - Sampling frequency in Hz
+    %
+    % Outputs:
+    %   a - Denominator coefficients [1, a1, a2]
+    %   b - Numerator coefficient [G]
+    
+    % Convert analog frequency to digital frequency
+    omega_0 = (2 * pi * freq) / Fs;
+    
+    % Calculate denominator coefficients (feedback)
+    a1 = -2 * R * cos(omega_0);
+    a2 = R^2;
+    
+    % Calculate gain normalization factor
+    G = (1 - R) * sqrt(1 - 2*R*cos(2*omega_0) + R^2);
+    
+    % Return filter coefficients
+    b = [G];           % Numerator (feedforward)
+    a = [1, a1, a2];   % Denominator (feedback)
+end
+\end{lstlisting}
+
+
+
+\section{Example Figures}
+
+
+\begin{figure*}[htb]
+\centering
+\includegraphics[width=\textwidth]{Resonance_Sweep.png}
+\caption{Resonance Sweep in time domain.}
+\label{fig:r_sweep}
+\end{figure*}
+
+
+\begin{figure*}[htb]
+\centering
+\includegraphics[width=\textwidth]{Freqz_RSweep.png}
+\caption{Resonance Sweep in frequency domain.}
+\label{fig:r_sweep_freq}
+\end{figure*}
+
+
+\begin{figure*}[htb]
+\centering
+\includegraphics[width=\textwidth]{Frequency_Sweep.png}
+\caption{Resonance Frequency Sweep in time domain.}
+\label{fig:freq_sweep}
+\end{figure*}
+
+
+\begin{figure*}[htb]
+\centering
+\includegraphics[width=\textwidth]{Freqz_FSweep.png}
+\caption{Resonance Frequency Sweep in frequency domain.}
+\label{fig:freq_sweep_freq}
+\end{figure*}
+
+
+
+
+
+
+
+
+
+
+
+
+% \subsection{Complete Resonator Example}
+
+% \begin{lstlisting}[caption=resonator\_example.m - Complete implementation example]
+% %% Parametric Resonator Example
+% clear; clc; close all;
+
+% % Parameters
+% Fs = 8000;          % Sampling frequency (Hz)
+% freq = 440;         % Resonant frequency (A4 note)
+% R = 0.99;           % Pole radius (close to 1 for sharp resonance)
+% duration = 2;       % Duration in seconds
+
+% % Generate resonator coefficients
+% [a, b] = res_coeffs(freq, R, Fs);
+
+% % Create impulse input
+% N = duration * Fs;
+% impulse = [1, zeros(1, N-1)];
+
+% % Generate impulse response
+% y = filter(b, a, impulse);
+
+% % Plot impulse response
+% figure(1);
+% subplot(2,1,1);
+% t = (0:length(y)-1) / Fs;
+% plot(t(1:1000), y(1:1000), 'LineWidth', 1.5);
+% xlabel('Time (seconds)');
+% ylabel('Amplitude');
+% title('Impulse Response of 440 Hz Resonator');
+% grid on;
+
+% % Plot frequency response
+% subplot(2,1,2);
+% [H, w] = freqz(b, a, 1024);
+% plot(w*Fs/(2*pi), 20*log10(abs(H)), 'LineWidth', 1.5);
+% xlabel('Frequency (Hz)');
+% ylabel('Magnitude (dB)');
+% title('Frequency Response');
+% grid on;
+% xlim([0, Fs/2]);
+
+% % Play the sound
+% soundsc(y, Fs);
+
+% %% Parameter Study
+% figure(2);
+
+% % Different R values
+% R_values = [0.9, 0.95, 0.99];
+% colors = ['r', 'g', 'b'];
+
+% for i = 1:length(R_values)
+%     [a_temp, b_temp] = res_coeffs(freq, R_values(i), Fs);
+%     y_temp = filter(b_temp, a_temp, impulse);
+    
+%     subplot(2,1,1);
+%     plot(t(1:500), y_temp(1:500), colors(i), 'LineWidth', 1.5);
+%     hold on;
+    
+%     subplot(2,1,2);
+%     [H_temp, w] = freqz(b_temp, a_temp, 1024);
+%     plot(w*Fs/(2*pi), abs(H_temp), colors(i), 'LineWidth', 1.5);
+%     hold on;
+% end
+
+% subplot(2,1,1);
+% xlabel('Time (seconds)');
+% ylabel('Amplitude');
+% title('Impulse Response for Different R Values');
+% legend('R=0.9', 'R=0.95', 'R=0.99');
+% grid on;
+
+% subplot(2,1,2);
+% xlabel('Frequency (Hz)');
+% ylabel('Magnitude');
+% title('Frequency Response for Different R Values');
+% legend('R=0.9', 'R=0.95', 'R=0.99');
+% grid on;
+% xlim([200, 800]);
+% \end{lstlisting}
+
+% \section{Parameter Effects}
+
+% \subsection{Pole Radius (R)}
+% \begin{itemize}
+%     \item \textbf{R close to 0}: Fast decay, broad frequency response
+%     \item \textbf{R close to 1}: Slow decay, sharp frequency response
+%     \item \textbf{R = 1}: Marginal stability, pure oscillation
+%     \item \textbf{R > 1}: Unstable system (avoid!)
+% \end{itemize}
+
+% \subsection{Resonant Frequency}
+% \begin{itemize}
+%     \item Determines the angle of poles in z-plane: $\pm\omega_0$
+%     \item Must satisfy Nyquist criterion: $f < F_s/2$
+%     \item Higher frequencies place poles at larger angles from real axis
+% \end{itemize}
+
+% \section{Applications and Extensions}
+
+% \subsection{Musical Synthesis}
+% Multiple resonators can be combined to create:
+% \begin{itemize}
+%     \item Harmonic series for realistic instrument timbres
+%     \item Chord progressions by summing different frequencies
+%     \item Percussive sounds with varying decay rates
+% \end{itemize}
+
+% \subsection{Advanced Techniques}
+% \begin{itemize}
+%     \item \textbf{Time-varying parameters}: Modulate R or frequency over time
+%     \item \textbf{Parallel resonator banks}: Multiple resonators for complex spectra
+%     \item \textbf{Feedback networks}: Connecting resonators for richer sounds
+% \end{itemize}
+
+% \section{Conclusion}
+
+% Parametric resonators provide a powerful and computationally efficient method for digital audio synthesis. By understanding the mathematical foundation and parameter relationships, you can create a wide variety of synthetic sounds ranging from simple tones to complex musical textures.
+
+% The key insight is that placing poles near the unit circle in the z-plane creates sustained oscillations, while the pole radius R controls the decay rate and frequency selectivity. This simple second-order structure forms the basis for many advanced digital audio processing techniques.
+
+\end{document}
