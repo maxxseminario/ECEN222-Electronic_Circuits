@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.29)  24 NOV 2025 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.29)  1 DEC 2025 12:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -195,319 +195,247 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<../lecture15_SDM/lecture15_SDM.pdf, id=1, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf  used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=1, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf  used on input line 64.
 (pdftex.def)             Requested size: 455.24268pt x 256.07405pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=3, page=1, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 1>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page1 used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=3, page=1, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 1>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page1 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 1>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page1 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 1>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page1 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 1>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page1 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 1>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page1 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=4, page=2, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 2>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page2 used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=4, page=2, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 2>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page2 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 2>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page2 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 2>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page2 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=5, page=3, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 3>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page3 used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=5, page=3, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 3>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page3 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 3>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page3 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 3>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page3 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=6, page=4, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 4>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page4 used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=6, page=4, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 4>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page4 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 4>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page4 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 4>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page4 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
 
 
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 1>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page1 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 1>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page1 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 2>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page2 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 2>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page2 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 3>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page3 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 3>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page3 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 4>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page4 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 4>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page4 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
 [1
 
 
- <../lecture15_SDM/lecture15_SDM.pdf{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}> <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf>]
-<../lecture15_SDM/lecture15_SDM.pdf, id=73, page=5, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 5>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page5 used on input line 58.
+ <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}> <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf> <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf> <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf>]
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=103, page=5, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 5>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page5 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 5>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page5 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 5>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page5 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=74, page=6, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 6>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page6 used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=104, page=6, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 6>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page6 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 6>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page6 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 6>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page6 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=75, page=7, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 7>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page7 used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=105, page=7, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 7>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page7 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 7>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page7 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 7>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page7 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=76, page=8, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 8>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page8 used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=106, page=8, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 8>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page8 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 8>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page8 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 8>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page8 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
 
 
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 5>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page5 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 5>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page5 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 6>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page6 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 6>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page6 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 7>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page7 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 7>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page7 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 8>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page8 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 8>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page8 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
 [2
 
- <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf>]
-<../lecture15_SDM/lecture15_SDM.pdf, id=116, page=9, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 9>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page9 used on input line 58.
+ <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf> <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf> <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf> <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf>]
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=110, page=9, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 9>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page9 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 9>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page9 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 9>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page9 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=117, page=10, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 10>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page10 used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=111, page=10, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 10>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page10 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 10>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page10 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 10>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page10 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=118, page=11, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 11>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page11 used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=112, page=11, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 11>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page11 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 11>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page11 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 11>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page11 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=119, page=12, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 12>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page12 used on input line 58.
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=113, page=12, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 12>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page12 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 12>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page12 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 12>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page12 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
 
 
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 9>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page9 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 9>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page9 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 10>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page10 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 10>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page10 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 11>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page11 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 11>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page11 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 12>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page12 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 12>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page12 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
 [3
 
- <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf>]
-<../lecture15_SDM/lecture15_SDM.pdf, id=135, page=13, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 13>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page13 used on input line 58.
+ <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf> <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf> <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf> <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf>]
+<../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, id=117, page=13, 455.24379pt x 256.07469pt>
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 13>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page13 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 13>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page13 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 13>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page13 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=136, page=14, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 14>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page14 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 1>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page1 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 14>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page14 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 1>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page1 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=137, page=15, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 15>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page15 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 1>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page1 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 15>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page15 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 1>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page1 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=138, page=16, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 16>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page16 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 1>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page1 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 16>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page16 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 1>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page1 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
 
 
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 13>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page13 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 14>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page14 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 15>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page15 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 16>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page16 used on input line 58.
+File: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf Graphic file (type pdf)
+<use ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf, page 13>
+Package pdftex.def Info: ../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf , page13 used on input line 64.
 (pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
 [4
 
- <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf>]
-<../lecture15_SDM/lecture15_SDM.pdf, id=142, page=17, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 17>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page17 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 17>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page17 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=143, page=18, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 18>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page18 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 18>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page18 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=144, page=19, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 19>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page19 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 19>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page19 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-<../lecture15_SDM/lecture15_SDM.pdf, id=145, page=20, 455.24379pt x 256.07469pt>
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 20>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page20 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 20>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page20 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-
-
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 17>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page17 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 18>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page18 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 19>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page19 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-File: ../lecture15_SDM/lecture15_SDM.pdf Graphic file (type pdf)
-<use ../lecture15_SDM/lecture15_SDM.pdf, page 20>
-Package pdftex.def Info: ../lecture15_SDM/lecture15_SDM.pdf , page20 used on input line 58.
-(pdftex.def)             Requested size: 364.19553pt x 204.86002pt.
-[5
-
- <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf> <../lecture15_SDM/lecture15_SDM.pdf>] (./ms_lecture_master.aux)
+ <../lecture16_IIR_filtering/lecture16_IIR_filtering.pdf>] (./ms_lecture_master.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3597 strings out of 467815
- 58732 string characters out of 5436410
+ 3576 strings out of 467815
+ 58593 string characters out of 5436410
  474182 words of memory out of 5000000
- 32218 multiletter control sequences out of 15000+600000
+ 32197 multiletter control sequences out of 15000+600000
  626825 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,19n,79p,417b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on ms_lecture_master.pdf (5 pages, 248551 bytes).
+ 72i,19n,79p,417b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on ms_lecture_master.pdf (4 pages, 263098 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 138 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

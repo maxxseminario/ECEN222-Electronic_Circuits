@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.2)  30 NOV 2025 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.29)  1 DEC 2025 12:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/mseminario2/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/lecture16_filtering/lecture16_filtering.tex
-(c:/Users/mseminario2/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/lecture16_filtering/lecture16_filtering.tex
+**"c:/Users/Maxx Seminario/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/lecture16_IIR_filtering/lecture16_IIR_filtering.tex"
+(c:/Users/Maxx Seminario/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/lecture16_IIR_filtering/lecture16_IIR_filtering.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-07-20>
+L3 programming layer <2025-07-19>
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2025/06/15 v3.74 A class for typesetting presentations
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -743,27 +743,27 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 43.
  (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count380
-) (./lecture16_filtering.aux)
-\openout1 = `lecture16_filtering.aux'.
+) (./lecture16_IIR_filtering.aux)
+\openout1 = `lecture16_IIR_filtering.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -813,10 +813,10 @@ LaTeX Font Info:    ... okay on input line 50.
 \makeMPintoPDFobject=\count386
 \everyMPtoPDFconversion=\toks63
 )
-Package hyperref Info: Link coloring ON on input line 50.
- (./lecture16_filtering.out) (./lecture16_filtering.out)
+Package hyperref Info: Link coloring ON on input line 65.
+ (./lecture16_IIR_filtering.out) (./lecture16_IIR_filtering.out)
 \@outlinefile=\write5
-\openout5 = `lecture16_filtering.out'.
+\openout5 = `lecture16_IIR_filtering.out'.
 
  (c:/texlive/2025/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -833,16 +833,16 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-(./lecture16_filtering.nav)
+(./lecture16_IIR_filtering.nav)
 
 [1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -866,23 +866,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [6
 
 ]
-Overfull \vbox (106.47478pt too high) detected at line 332
- []
-
-
 
 [7
 
 ]
-Overfull \vbox (2.1285pt too high) detected at line 396
- []
-
-
 
 [8
 
 ]
-Overfull \vbox (107.72478pt too high) detected at line 440
+Overfull \vbox (2.12819pt too high) detected at line 548
  []
 
 
@@ -890,80 +882,52 @@ Overfull \vbox (107.72478pt too high) detected at line 440
 [9
 
 ]
-Overfull \vbox (2.1285pt too high) detected at line 507
- []
-
-
 
 [10
 
 ]
-Overfull \vbox (108.72478pt too high) detected at line 553
- []
-
-
 
 [11
 
 ]
-Overfull \vbox (3.1285pt too high) detected at line 618
- []
-
-
 
 [12
 
 ]
-Overfull \vbox (108.72478pt too high) detected at line 664
- []
-
-
 
 [13
 
 ]
-Overfull \vbox (2.82892pt too high) detected at line 715
- []
-
-
-
-[14
-
-]
-
-[15
-
-]
 \tf@nav=\write6
-\openout6 = `lecture16_filtering.nav'.
+\openout6 = `lecture16_IIR_filtering.nav'.
 
 \tf@toc=\write7
-\openout7 = `lecture16_filtering.toc'.
+\openout7 = `lecture16_IIR_filtering.toc'.
 
 \tf@snm=\write8
-\openout8 = `lecture16_filtering.snm'.
+\openout8 = `lecture16_IIR_filtering.snm'.
 
- (./lecture16_filtering.aux)
+ (./lecture16_IIR_filtering.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-07-20>
+L3 programming layer <2025-07-19>
  ***********
-Package rerunfilecheck Info: File `lecture16_filtering.out' has not changed.
-(rerunfilecheck)             Checksum: 26D27D3044E5BAC62CA9FEADA1B617F3;1218.
+Package rerunfilecheck Info: File `lecture16_IIR_filtering.out' has not changed.
+(rerunfilecheck)             Checksum: 53F942B72FB1D1A4FB6309EAEA256370;1095.
  ) 
 Here is how much of TeX's memory you used:
- 38274 strings out of 467801
- 909215 string characters out of 5436090
- 1531807 words of memory out of 5000000
- 66167 multiletter control sequences out of 15000+600000
- 639292 words of font info for 85 fonts, out of 8000000 for 9000
+ 38329 strings out of 467815
+ 910357 string characters out of 5436410
+ 1749271 words of memory out of 5000000
+ 66214 multiletter control sequences out of 15000+600000
+ 638935 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,18n,123p,840b,2288s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on lecture16_filtering.pdf (15 pages, 228167 bytes).
+ 128i,16n,123p,853b,2307s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on lecture16_IIR_filtering.pdf (13 pages, 260480 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 316 compressed objects within 4 object streams
- 40 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
