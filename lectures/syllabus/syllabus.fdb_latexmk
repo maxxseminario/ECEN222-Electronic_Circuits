@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1765663141.59125 "c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/lectures/syllabus/syllabus.tex" "syllabus.pdf" "syllabus" 1765663148.02693 0
-  "c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/lectures/syllabus/syllabus.tex" 1765663133 11018 613d9a708023751fedcc117672b0fbf7 ""
+["pdflatex"] 1765663240.99055 "c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/lectures/syllabus/syllabus.tex" "syllabus.pdf" "syllabus" 1765663247.67514 0
+  "c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/lectures/syllabus/syllabus.tex" 1765663239 11000 1f7d74d04398067657491cac9d1c85aa ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1754165087 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1754165087 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1754166916 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -263,8 +263,8 @@
   "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1754174620 5572357 f0501b90ab048e2d9ec23d8a1bf903b2 ""
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1754174821 3605796 359cbae20affdd80e12c83a2a7337830 ""
   "c:/texlive/2025/texmf.cnf" 1754174592 713 e69b156964470283e0530f5060668171 ""
-  "syllabus.aux" 1765663147 10052 fd0f8aeb0cac77cd13d9c500a5ac8233 "pdflatex"
-  "syllabus.tex" 1765663133 11018 613d9a708023751fedcc117672b0fbf7 ""
+  "syllabus.aux" 1765663247 10052 fd0f8aeb0cac77cd13d9c500a5ac8233 "pdflatex"
+  "syllabus.tex" 1765663239 11000 1f7d74d04398067657491cac9d1c85aa ""
   (generated)
   "syllabus.aux"
   "syllabus.log"
