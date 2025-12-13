@@ -1,5 +1,5 @@
 \DocumentMetadata{
-  pdfversion=2.0,
+  pdfversion=2. 0,
   pdfstandard=ua-2,
   testphase={phase-III,math,table,title}
 }
@@ -30,6 +30,7 @@
 \usepackage{enumitem}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{hyperref}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \graphicspath{{../figs/}}
 
@@ -63,9 +64,9 @@
 \begin{center}
 	\textbf{\large University of Nebraska-Lincoln}
 	
-	\textbf{\large ECEN 463/863: Digital Signal Processing}
+	\textbf{\large ECEN 222: Electronic Circuits}
 	
-	\textbf{\large Fall, 2025}
+	\textbf{\large Spring, 2026}
 	
 	\vspace{2mm}
 	
@@ -77,377 +78,156 @@
 
 \subsection*{Teaching Staff} 
 
-\subsubsection*{Instructor: Maxx Seminario} 
-Office hours: Mondays 2:30 -- 3:30 PM, in SEC C215, or by appointment. \\
+\subsubsection*{Instructor:  Maxx Seminario} 
+Office hours: Mondays 1:30 -- 2:30 PM, in SEC C215, or by appointment.  \\
 e-mail: mseminario2@huskers.unl.edu
 
-% \subsubsection*{Teaching Assistant: TBD} 
-% Office hours: TBD, \\
-% e-mail: TBD
+\subsubsection*{Teaching Assistant: Thomas Gokie} 
+Office hours: TBD, \\
+e-mail: tgokie2@huskers.unl.edu
 
 \subsection*{Class Meetings} 
 \begin{itemize}
-	\item Mondays, Wednesdays, and Fridays 1:30 -- 2:20 PM at NH W183
+	\item Lecture: Mondays, Wednesdays, and Fridays 12:30 -- 1:20 PM at NH W131
+	\item Laboratory: Date TBD 
     \item If in-person classes are canceled due to inclement weather, you will be notified of the instructional continuity plan for this class via Canvas
 \end{itemize}
 
 \subsection*{Pre-Requisite} 
 \begin{itemize}
-	\item ECEN 304 (Signals and Systems) or permission of the instructor
+	\item Electrical Circuits 1 (ECEN 213, ECEN 218)
+	\item Basic Calculus
 \end{itemize}
 
-\subsection*{ECEN 463/863 Course Description} 
-The successful student will exhibit competence in a wide variety of topics pertaining to
-Digital Signal Processing (DSP), including:
+\subsection*{ECEN 222 Course Description} 
+The objective of this course is to provide an introduction to the design and analysis of solid-state electronic circuits. The successful student will exhibit competence in a wide variety of topics pertaining to electronic circuits, including: 
 \begin{itemize}
-
-    \item Sampling of continuous signals
-    \item Discrete transform theory (including Z-transform, Discrete Time Fourier Transform, and Discrete Fourier Transform)
-    \item Digital filter use and design via matlab software
-    \item Time/Frequency, polyphase and other representations of discrete-time signals
-    \item Signal processing implementation and simulation in Matlab
+    \item Terminal characteristics and models of diodes, bipolar and field-effect transistors
+    \item Design and analysis of diode circuits, bipolar and field effect transistor circuits
+    \item Bias circuit designs
+    \item Transistor amplifiers and switching circuits
+    \item Digital logic circuits and their implementation using CMOS technology
+    \item Practical circuit design and implementation through laboratory exercises
 \end{itemize}
 
+\subsection*{Course Outcomes}
+The students who successfully complete this course will be able to:
+\begin{itemize}
+    \item Understand the fundamentals of semiconductor concepts and the operational characteristics of basic semiconductor devices:  diodes, bipolar and field-effect transistors
+    \item Understand the nonlinear current vs. voltage characteristics of diode and transistors
+    \item Understand the principles of diode rectification and regulation, transistor amplification and switching
+    \item Perform small signal modeling and analysis of transistors
+    \item Analyze and implement single-stage transistor amplifier and switching circuits
+\end{itemize}
 
-% \subsection*{Tentative schedule and class topics}
-
-% \input{tentative_schedule.tex}
-
-% \footnotetext[1]{Reading assignments in ``Discrete-time signal processing'', Oppenheim and Schafer, 3rd edition}.
-
-% \subsection*{Resources}
-
-% \subsubsection*{Textbook}
-% \begin{itemize}
-% 	\item ``Discrete-time signal processing'', Oppenheim and Schafer, 3rd edition, 2010.
-% 	\item Lecture notes will cover all the material, but further reading of the textbook is encouraged.
-% \end{itemize}
+\subsection*{Textbook}
+\begin{itemize}
+	\item ``Microelectronic Circuits'', 7th edition, A. S. Sedra and K. C. Smith, Oxford University Press, 2015.
+	\item ISBN: 978-0-19-93913-6
+	\item Lecture notes will cover all the material, but further reading of the textbook is encouraged. 
+\end{itemize}
 
 \subsubsection*{Class website}
 
 The class website \href{https://canvas.unl.edu}{https://canvas.unl.edu} contains
 
 \begin{itemize}
-	\item Lecture notes, homework assignments, and Matlab code.
-	\item Homework submission will be online on Canvas.
+	\item Lecture notes, homework assignments, laboratory manuals, and SPICE simulation files.
+	\item Homework and lab report submission will be online on Canvas.
 \end{itemize}
+
+\subsection*{Course Topics}
+
+\textbf{Unit 1: Signals and Amplifiers} \\
+Introduction to the basic concepts of electronics, signals, frequency spectra in analog and digital forms.  Amplifiers are introduced as circuit building blocks and various types and models are studied. \\
+
+\textbf{Unit 2: Operational Amplifiers } \\
+Introduction to the operational amplifiers, their terminal characteristics, simple applications, and practical limitations. \\
+
+\textbf{Unit 3: Semiconductors} \\
+This unit provides an overview of semiconductor concepts at a level sufficient for understanding the operation of diodes and transistors. Various semiconductors, current flow in semiconductors, pn junction and V-I characteristics. \\
+
+\textbf{Unit 4: Diodes} \\
+The ideal diode, the diode terminal characteristics, the circuit models that are used to represent it, and its circuit applications such as the rectifier circuits, limiting and clamping circuits. \\
+
+\textbf{Unit 5: MOSFETs (4 lecture hours)} \\
+Device structure and physical operation, V-I characteristics, MOSFET circuits at DC.  Introduction to biasing, small signal operation and models.  Basic operation of MOSFET as an amplifier and as a switch. Depletion type MOSFET. \\
+
+\textbf{Unit 6: Bipolar Junction Transistors (BJT)} \\
+The device structure and its physical operation of BJT, description of its terminal characteristics, the operation of the transistor as a circuit element, DC circuits utilizing the device. \\
+
+\textbf{Unit 7: Transistor Amplifiers} \\
+Comparison of MOSFET and BJT, CS and CE amplifiers with loads, high frequency response of CS and CE amplifiers, CG and CB amplifiers with active loads, high frequency response of CG and CB amplifiers, cascade amplifiers.  CS and CE amplifiers with source (emitter) degeneration, source and emitter followers, some useful transfer pairings, current mirrors with improved performance.  SPICE examples. \\
+
+\textbf{Unit 8: CMOS Digital Logic Circuits} \\
+The foundation of CMOS logic-gate circuits, digital logic inverters with CMOS; its static and dynamic characteristics and its design. \\
+
+\textbf{Unit 9: CMOS Digital Integrated-Circuit Design} \\
+An overview of digital IC technologies, design and performance analysis of CMOS inverter.  Logic gate circuits.  Pass-transistor logic. Dynamic logic circuits.  SPICE examples. \\
+
+\subsection*{Laboratory Component}
+
+There will be approximately 11 weekly laboratories conducted in groups of two students, with individual lab reports submitted the following week.
+
+\textbf{Laboratory Topics: }
+\begin{enumerate}
+    \item I-V characteristics and large/small operations of junction and Zener diodes
+    \item Diode rectifiers
+    \item Bridge and center-tap rectifiers with shunt voltage regulation
+    \item I-V and voltage transfer characteristics of BJT
+    \item Large signal and resistive biasing of BJT
+    \item Variable DC power supply project
+    \item I-V and voltage transfer characteristics of MOSFET
+    \item Common emitter BJT amplifier
+    \item Emitter follower amplifier and buffering application
+    \item Common source amplifier and source follower buffering application
+    \item Transistor switching circuits and CMOS inverters
+\end{enumerate}
 
 \subsection*{Evaluation Basis}
-In-Class Quizzes 10\% \\
-Homework: 30\% - 60\% \\
-Exams: 30\% - 60\% (Depending on 1 or 2 Exams) 
+In-Class Quizzes:  10\% \\
+Homework: 30\% \\
+Laboratory Reports: 30\% \\
+Exams: 30\% 
+\subsection*{Homework Policy}
 
-\subsection*{Homework policy}
-
-% There will be 6 homework assignments.
 \begin{itemize}
-	\item Most problem sets will be assigned on Friday and will be due the following Friday by 11:59 PM.
-	\item Assignments should be submitted online on Canvas. Submit a single .pdf file with your solutions. 
-	\item Homework grades will typically be available within a week of the due date.
-	\item Discussion among students is encouraged, but individual solutions must be submitted
-	\item In general, late homeworks will not be accepted. Under extenuating circumstances, extensions must be approved by the instructor, and arranged prior to the deadline.
+	\item Problem sets will be assigned on Friday and will be due the following Friday by 11:59 PM.
+	\item Assignments should be submitted online on Canvas. Submit a single .pdf file with your solutions.  
+	\item Homework grades will typically be available within a week of the due date. 
+	\item Discussion among students is encouraged, but individual solutions must be submitted. 
+	\item In general, late homeworks will not be accepted. Under extenuating circumstances, extensions must be approved by the instructor, and arranged prior to the deadline. 
 \end{itemize}
 
-\subsection*{MATALB Exercises}
+\subsection*{Laboratory Policy}
 
-Computer exercises will be given on a regular basis (including Dead Week). These
-computer simulations provide extremely valuable learning opportunities. You will be
-required to program these assignments yourselves.
+\begin{itemize}
+    \item Laboratory attendance is encouraged. Lab sessions will be held weekly, and each session will last approximately 3 hours.
+    \item Lab reports are due one week after the lab session by 11:59 PM on Canvas.
+    \item Lab work will be conducted in groups of two students. Both students must participate actively. 
+    \item Lab reports should include: objectives, procedures, experimental results, analysis, discussion, and conclusions.
+    \item Late lab reports will be penalized 20\% per day unless prior arrangements are made with the instructor.
+\end{itemize}
+
+\subsection*{SPICE Simulation Exercises}
+
+Computer simulation exercises using Multisim will be integrated throughout the course. These simulations provide valuable learning opportunities to verify circuit designs and understand circuit behavior. You will be required to complete these assignments individually.
 
 \subsection*{In-Class Quizzes}
-Periodic quizzes may be given. Usually we will use these to encourage student participation
-in assigned reading. This will allow us to cover course material more thoroughly and
-efficiently.
+Periodic quizzes may be given. Usually we will use these to encourage student participation in assigned reading. This will allow us to cover course material more thoroughly and efficiently.
 
 \subsection*{Exams}
-One or two exams will be given during the semester. Make-up exams will be oral.
+Two exams will be given during the semester. Make-up exams will be oral.
 
 \subsection*{Personal Responsibility}
-Class attendance and participation is strongly encouraged. Late materials are not accepted unless previously approved.
+Class attendance and participation is strongly encouraged. Late materials are not accepted unless previously approved. 
 
 \subsection*{Academic Integrity}
-As is always the case, you will be responsible for your own work in this class.
-Misrepresenting someone else's work as your own (that is, without clear attribution of
-source) is considered cheating. Cheating will result in a course grade of F.
-
+As is always the case, you will be responsible for your own work in this class. Misrepresenting someone else's work as your own (that is, without clear attribution of source) is considered cheating. Cheating will result in a course grade of F.
 
 \subsection*{Students with Disabilities}
-The Office of Civil Rights requires the following ADA language to be included in all
-syllabi (as per Dr. Horn, UNL ADA Compliance Officer, 2007): \\
+The Office of Civil Rights requires the following ADA language to be included in all syllabi (as per Dr. Horn, UNL ADA Compliance Officer, 2007): \\
 
-"Students with disabilities are encouraged to contact the instructor for a confidential
-discussion of their individual needs for academic accommodation. It is the policy of the
-University of Nebraska-Lincoln to provide flexible and individualized accommodation to
-students with documented disabilities that may affect their ability to fully participate in
-course activities or to meet course requirements. To receive accommodation services,
-students must be registered with the Services for Students with Disabilities (SSD) office,
-132 Canfield Administration, 472-3787 voice or TTY."
-
-
-
-
-
-
-
-
-
-% \subsection*{Exams policy}
-% \subsubsection*{Midterm}
-% \begin{itemize}
-% 	\item In-class midterm on July 23. 
-% 	\item Midterm covers lectures 1 to 7 (homeworks 1 to 3).
-% 	\item Midterm is open book and open notes.
-% \end{itemize}
-
-% \subsubsection*{Final}
-% \begin{itemize}
-% 	\item The final exam will be a 24-hour-take-home exam. Dates TBD.
-% 	\item The final exam should take just a few hours, and it will involve implementation and simulation of some digital signal processing algorithms.
-% 	\item The review session for the final will be on the last lecture.
-% \end{itemize}
+"Students with disabilities are encouraged to contact the instructor for a confidential discussion of their individual needs for academic accommodation. It is the policy of the University of Nebraska-Lincoln to provide flexible and individualized accommodation to students with documented disabilities that may affect their ability to fully participate in course activities or to meet course requirements. To receive accommodation services, students must be registered with the Services for Students with Disabilities (SSD) office, 132 Canfield Administration, 472-3787 voice or TTY."
 
 \end{document}
-
-
-
-% \subsection*{Exams policy}
-% \subsubsection*{Midterm}
-% \begin{itemize}
-% 	\item In-class midterm on July 23. 
-% 	\item Midterm covers lectures 1 to 7 (homeworks 1 to 3).
-% 	\item Midterm is open book and open notes.
-% \end{itemize}
-
-% \subsubsection*{Final}
-% \begin{itemize}
-% 	\item The final exam will be a 24-hour-take-home exam. Dates TBD.
-% 	\item The final exam should take just a few hours, and it will involve implementation and simulation of some digital signal processing algorithms.
-% 	\item The review session for the final will be on the last lecture.
-% \end{itemize}
-
-\end{document}
-
-
-
-
-% \subsection*{Exams policy}
-% \subsubsection*{Midterm}
-% \begin{itemize}
-% 	\item In-class midterm on July 23. 
-% 	\item Midterm covers lectures 1 to 7 (homeworks 1 to 3).
-% 	\item Midterm is open book and open notes.
-% \end{itemize}
-
-% \subsubsection*{Final}
-% \begin{itemize}
-% 	\item The final exam will be a 24-hour-take-home exam. Dates TBD.
-% 	\item The final exam should take just a few hours, and it will involve implementation and simulation of some digital signal processing algorithms.
-% 	\item The review session for the final will be on the last lecture.
-% \end{itemize}
-
-\end{document}
-
-
-% \documentclass[10pt]{article}
-% \usepackage{geometry}
-%  \geometry{a4paper}
-% \usepackage{fancyhdr} % Required for custom headers
-% \usepackage{lastpage} % Required to determine the last page for the footer
-% \usepackage{extramarks} % Required for headers and footers
-% \usepackage[usenames,dvipsnames]{color} % Required for custom colors
-% \usepackage{graphicx} % Required to insert images
-% \usepackage{listings} % Required for insertion of code
-% \usepackage{courier} % Required for the courier font
-% \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-% \usepackage{caption}
-% \usepackage{subcaption}
-% \usepackage{amsmath}
-% \usepackage{amsmath}
-% \usepackage{amssymb}
-% \usepackage{epstopdf}
-% \usepackage{placeins}
-% \usepackage{color} 
-% \usepackage{fancyvrb} 
-% \usepackage{setspace}
-% \usepackage[numbered]{bookmark}
-% \usepackage{pdfpages}
-% \usepackage{enumitem}
-% \usepackage{tikz}
-% \usepackage{pgfplots}
-% \DeclareGraphicsExtensions{.pdf,.png,.jpg}
-% \graphicspath{{../figs/}}
-
-% \usepgfplotslibrary{fillbetween}
-% \usetikzlibrary{positioning}
-
-% \usetikzlibrary{pgfplots.groupplots}
-% \usetikzlibrary{plotmarks}
-% \usetikzlibrary{calc}
-
-% \usepgfplotslibrary{groupplots}
-
-% \pgfplotsset{compat=newest} 
-
-% \DeclareMathOperator{\E}{\mathbb{E}}
-
-% \setlength{\parindent}{0pt}
-
-% \singlespacing
-
-% % Margins
-% \topmargin=-0.45in
-% \evensidemargin=0in
-% \oddsidemargin=0in
-% \textwidth=6.5in
-% \textheight=9.0in
-% \headsep=0.25in
-
-% \begin{document}
-% \doublespacing
-% \begin{center}
-% 	\textbf{\large University of Nebraska-Lincoln}
-	
-% 	\textbf{\large ECEN 463/863: Digital Signal Processing}
-	
-% 	\textbf{\large Fall, 2025}
-	
-% 	\vspace{2mm}
-	
-% 	\textbf{\large Syllabus}
-% \end{center}
-% \vspace{-5mm}
-% \rule{\textwidth}{0.5pt}
-% \singlespacing
-
-% \subsection*{Teaching Staff} 
-
-% \subsubsection*{Instructor: Maxx Seminario} 
-% Office hours: Mondays 2:30 -- 3:30 PM, in SEC C215, or by appointment. \\
-% e-mail: mseminario2@huskers.unl.edu
-
-% % \subsubsection*{Teaching Assistant: TBD} 
-% % Office hours: TBD, \\
-% % e-mail: TBD
-
-% \subsection*{Class Meetings} 
-% \begin{itemize}
-% 	\item Mondays, Wednesdays, and Fridays 1:30 -- 2:20 PM at NH W183
-%     \item If in-person classes are canceled due to inclement weather, you will be notified of the instructional continuity plan for this class via Canvas
-% \end{itemize}
-
-% \subsection*{Pre-Requisite} 
-% \begin{itemize}
-% 	\item ECEN 304 (Signals and Systems) or permission of the instructor
-% \end{itemize}
-
-% \subsection*{ECEN 463/863 Course Description} 
-% The successful student will exhibit competence in a wide variety of topics pertaining to
-% Digital Signal Processing (DSP), including:
-% \begin{itemize}
-
-%     \item Sampling of continuous signals
-%     \item Discrete transform theory (including Z-transform, Discrete Time Fourier Transform, and Discrete Fourier Transform)
-%     \item Digital filter use and design via matlab software
-%     \item Time/Frequency, polyphase and other representations of discrete-time signals
-%     \item Signal processing implementation and simulation in Matlab
-% \end{itemize}
-
-
-% % \subsection*{Tentative schedule and class topics}
-
-% % \input{tentative_schedule.tex}
-
-% % \footnotetext[1]{Reading assignments in ``Discrete-time signal processing'', Oppenheim and Schafer, 3rd edition}.
-
-% % \subsection*{Resources}
-
-% % \subsubsection*{Textbook}
-% % \begin{itemize}
-% % 	\item ``Discrete-time signal processing'', Oppenheim and Schafer, 3rd edition, 2010.
-% % 	\item Lecture notes will cover all the material, but further reading of the textbook is encouraged.
-% % \end{itemize}
-
-% \subsubsection*{Class website}
-
-% The class website \href{https://canvas.unl.edu}{https://canvas.unl.edu} contains
-
-% \begin{itemize}
-% 	\item Lecture notes, homework assignments, and Matlab code.
-% 	\item Homework submission will be online on Canvas.
-% \end{itemize}
-
-% \subsection*{Evaluation Basis}
-% In-Class Quizzes $10\%$ \\
-% Homework: $30\%$ - $60\%$ \\
-% Exams: $30\%$ - $60\%$ (Depending on 1 or 2 Exams) 
-
-% \subsection*{Homework policy}
-
-% % There will be 6 homework assignments.
-% \begin{itemize}
-% 	\item Most problem sets will be assigned on Friday and will be due the following Friday by 11:59 PM.
-% 	\item Assignments should be submitted online on Canvas. Submit a single .pdf file with your solutions. 
-% 	\item Homework solutions will typically be available shortly after the homework due date. Homework grades will typically be available within a week of the due date.
-% 	\item Discussion among students is encouraged, but individual solutions must be submitted
-% 	\item In general, late homeworks will not be accepted. Under extenuating circumstances, extensions must be approved by the instructor or TA, and arranged prior to the deadline.
-% \end{itemize}
-
-% \subsection*{MATALB Exercises}
-
-% Computer exercises will be given on a regular basis (including Dead Week). These
-% computer simulations provide extremely valuable learning opportunities. You will be
-% required to program these assignments yourselves.
-
-% \subsection*{In-Class Quizzes}
-% Periodic quizzes may be given. Usually we will use these to encourage student participation
-% in assigned reading. This will allow us to cover course material more thoroughly and
-% efficiently.
-
-% \subsection*{Exams}
-% One or two exams will be given during the semester. Make-up exams will be oral.
-
-% \subsection*{Personal Responsibility}
-% Class attendance and participation is strongly encouraged. Late materials are not accepted unless previously approved.
-
-% \subsection*{Academic Integrity}
-% As is always the case, you will be responsible for your own work in this class.
-% Misrepresenting someone else's work as your own (that is, without clear attribution of
-% source) is considered cheating. Cheating will result in a course grade of F.
-
-
-% \subsection*{Students with Disabilities}
-% The Office of Civil Rights requires the following ADA language to be included in all
-% syllabi (as per Dr. Horn, UNL ADA Compliance Officer, 2007): \\
-
-% "Students with disabilities are encouraged to contact the instructor for a confidential
-% discussion of their individual needs for academic accommodation. It is the policy of the
-% University of Nebraska-Lincoln to provide flexible and individualized accommodation to
-% students with documented disabilities that may affect their ability to fully participate in
-% course activities or to meet course requirements. To receive accommodation services,
-% students must be registered with the Services for Students with Disabilities (SSD) office,
-% 132 Canfield Administration, 472-3787 voice or TTY."
-
-
-
-
-
-
-
-
-
-% % \subsection*{Exams policy}
-% % \subsubsection*{Midterm}
-% % \begin{itemize}
-% % 	\item In-class midterm on July 23. 
-% % 	\item Midterm covers lectures 1 to 7 (homeworks 1 to 3).
-% % 	\item Midterm is open book and open notes.
-% % \end{itemize}
-
-% % \subsubsection*{Final}
-% % \begin{itemize}
-% % 	\item The final exam will be a 24-hour-take-home exam. Dates TBD.
-% % 	\item The final exam should take just a few hours, and it will involve implementation and simulation of some digital signal processing algorithms.
-% % 	\item The review session for the final will be on the last lecture.
-% % \end{itemize}
-
-% \end{document}

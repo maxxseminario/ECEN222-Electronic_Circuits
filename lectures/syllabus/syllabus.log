@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.29)  22 AUG 2025 12:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.2)  13 DEC 2025 15:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Maxx Seminario/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/syllabus/syllabus.tex"
-(c:/Users/Maxx Seminario/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/syllabus/syllabus.tex
+**"c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/lectures/syllabus/syllabus.tex"
+(c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/lectures/syllabus/syllabus.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-07-19>
+L3 programming layer <2025-07-20>
 (c:/texlive/2025/texmf-dist/tex/latex/latex-lab/documentmetadata-support.ltx (c:/texlive/2025/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanagement-testphase.sty
 Package: pdfmanagement-testphase 2025-07-15 v0.96u LaTeX PDF management bundle
  (c:/texlive/2025/texmf-dist/tex/latex/tagpdf/tagpdf-base.sty
@@ -304,7 +304,7 @@ Package: listings 2024/09/23 1.10c (Carsten Heinz)
  (c:/texlive/2025/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
 ) (c:/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.sty (c:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-07-19 L3 programming layer (loader) 
+Package: expl3 2025-07-20 L3 programming layer (loader) 
 )
 Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 )
@@ -441,7 +441,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))) (c:/texlive/2025/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 ) (c:/texlive/2025/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count350
 \FV@InFile=\read2
 \FV@TabBox=\box66
@@ -836,24 +836,24 @@ File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (./syllabus.aux)
 \openout1 = `syllabus.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 Info: mathml file syllabus-mathml does not exist
 Info: mathml file syllabus-luamml-mathml does not exist
@@ -909,7 +909,7 @@ Info: mathml file syllabus-luamml-mathml does not exist
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 61.
+Package hyperref Info: Link coloring OFF on input line 62.
  (c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
  (c:/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
@@ -928,18 +928,22 @@ LaTeX DocumentMetadata Warning: The language has not been set in
 
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-[2] 
+[2]
+
+[3]
+
+[4] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 <<latex-list-css.html>><<latex-align-css.html>> (./syllabus.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-07-19>
+L3 programming layer <2025-07-20>
  ***********
 
 
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~145 structure objects
-(tagpdf)             with ~66 'MC' leaf nodes.
+(tagpdf)             Writing out ~324 structure objects
+(tagpdf)             with ~143 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 
 Package tagpdf Info: writing ParentTree
@@ -951,18 +955,18 @@ Package tagpdf Info: writing StructElems
 Package tagpdf Info: writing Root
  ) 
 Here is how much of TeX's memory you used:
- 43390 strings out of 467815
- 1047158 string characters out of 5436410
- 1874504 words of memory out of 5000000
- 71257 multiletter control sequences out of 15000+600000
+ 44400 strings out of 467801
+ 1072062 string characters out of 5436090
+ 1911921 words of memory out of 5000000
+ 72212 multiletter control sequences out of 15000+600000
  646838 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,5n,100p,834b,646s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,5n,100p,812b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/pdftex/pdftexspace.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on syllabus.pdf (2 pages, 98930 bytes).
+Output written on syllabus.pdf (4 pages, 120917 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 32 named destinations out of 1000 (max. 500000)
- 689 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 559 PDF objects out of 1000 (max. 8388607)
+ 529 compressed objects within 6 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 1421 words of extra memory for PDF output out of 10000 (max. 10000000)
 

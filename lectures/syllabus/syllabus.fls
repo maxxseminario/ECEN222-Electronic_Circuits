@@ -1,8 +1,8 @@
-PWD c:/Users/Maxx Seminario/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/syllabus
+PWD c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/lectures/syllabus
 INPUT c:/texlive/2025/texmf.cnf
 INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Maxx Seminario/Home/Courses/ECEN/ECEN-463(Inst)(DSP)/latek/lectures/syllabus/syllabus.tex
+INPUT c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/lectures/syllabus/syllabus.tex
 OUTPUT syllabus.log
 INPUT c:/texlive/2025/texmf-dist/tex/latex/latex-lab/documentmetadata-support.ltx
 INPUT c:/texlive/2025/texmf-dist/tex/latex/latex-lab/documentmetadata-support.ltx

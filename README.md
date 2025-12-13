@@ -1,4 +1,4 @@
-# Digital Signal Processing Course – University of Nebraska–Lincoln
+# Electronic Circuits Course – University of Nebraska–Lincoln
 
 **Author:** Maxx Seminario   
 **Instructor:** Maxx Seminario    
