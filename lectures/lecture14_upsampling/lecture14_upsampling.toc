@@ -1,4 +1,0 @@
-\babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Motivation and Definitions}{2}{0}{1}
-\beamer@sectionintoc {2}{Examples}{8}{0}{2}
-\beamer@sectionintoc {3}{Summary}{10}{0}{3}

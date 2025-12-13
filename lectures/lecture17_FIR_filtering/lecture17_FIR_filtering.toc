@@ -1,4 +1,0 @@
-\babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Implementation}{3}{0}{2}
-\beamer@sectionintoc {3}{Linear Phase FIR Filter Types}{4}{0}{3}
