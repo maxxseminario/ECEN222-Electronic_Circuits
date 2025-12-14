@@ -242,9 +242,9 @@ You will now investigate the voltage regulation properties of a Zener diode oper
 \begin{figure}[h]
     \centering
     \begin{circuitikz}[american]
-        \draw (0,0) to[V, l=$V_S$] (0,3)
+        \draw (0,0) to[V, l=$V_S$, invert] (0,3)
               to[R, l=$R$, i=$I_Z$] (3,3)
-              to[zD, l=$D_Z$, v=$V_Z$] (3,0)
+              to[zD, l=$D_Z$, v=$V_Z$, invert] (3,0)
               to[short] (0,0);
     \end{circuitikz}
     \caption{Zener diode characteristic measurement circuit. The Zener diode is reverse-biased with the cathode toward the positive supply. }

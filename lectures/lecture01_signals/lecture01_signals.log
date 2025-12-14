@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.2)  13 DEC 2025 21:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.2)  13 DEC 2025 21:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1356,15 +1356,15 @@ Package caption Info: End \AtBeginDocument code.
 [1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 153.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 152.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 153.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 152.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \vbox (3.45366pt too high) detected at line 153
+Overfull \vbox (3.45366pt too high) detected at line 152
  []
 
 
@@ -1372,7 +1372,7 @@ Overfull \vbox (3.45366pt too high) detected at line 153
 [2
 
 ]
-Overfull \hbox (4.37184pt too wide) in paragraph at lines 215--215
+Overfull \hbox (4.37184pt too wide) in paragraph at lines 214--214
  [] 
  []
 
@@ -1393,7 +1393,7 @@ Overfull \hbox (4.37184pt too wide) in paragraph at lines 215--215
 [5
 
 ]
-Package pgfplots info on input line 384: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 383: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
 
 
 [6
@@ -1403,7 +1403,7 @@ Package pgfplots info on input line 384: Using 'lua backend=false' for axis: xmo
 [7
 
 ]
-Overfull \vbox (2.47371pt too high) detected at line 515
+Overfull \vbox (2.47371pt too high) detected at line 514
  []
 
 
@@ -1411,7 +1411,7 @@ Overfull \vbox (2.47371pt too high) detected at line 515
 [8
 
 ]
-Overfull \hbox (5.69948pt too wide) in paragraph at lines 597--597
+Overfull \hbox (5.69948pt too wide) in paragraph at lines 596--596
  [] 
  []
 
@@ -1428,7 +1428,7 @@ Overfull \hbox (5.69948pt too wide) in paragraph at lines 597--597
 [11
 
 ]
-Overfull \vbox (53.5366pt too high) detected at line 768
+Overfull \vbox (53.5366pt too high) detected at line 767
  []
 
 
@@ -1460,13 +1460,13 @@ Package rerunfilecheck Info: File `lecture01_signals.out' has not changed.
 Here is how much of TeX's memory you used:
  58329 strings out of 467801
  1503372 string characters out of 5436090
- 2521215 words of memory out of 5000000
+ 2522188 words of memory out of 5000000
  86128 multiletter control sequences out of 15000+600000
  638935 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,123p,849b,2496s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on lecture01_signals.pdf (13 pages, 224482 bytes).
+Output written on lecture01_signals.pdf (13 pages, 224466 bytes).
 PDF statistics:
  268 PDF objects out of 1000 (max. 8388607)
  214 compressed objects within 3 object streams

@@ -1,0 +1,514 @@
+\DocumentMetadata{
+  pdfversion=2.0,
+  pdfstandard=ua-2,
+  testphase={phase-III,math,table,title}
+}
+
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{extramarks}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{courier}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{placeins}
+\usepackage{color} 
+\usepackage{fancyvrb} 
+\usepackage{setspace}
+\usepackage{bookmark}
+\usepackage{pdfpages}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{hyperref}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usepackage{titling}
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{../figs/}}
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{calc}
+
+\pgfplotsset{compat=newest} 
+
+\setlength{\parindent}{0pt}
+
+\singlespacing
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+% Header and footer
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \lhead{ECEN 222:  Electronic Circuits}
+  \chead{Lab 3}
+  \rhead{Page \thepage\ of \pageref{LastPage}}
+  \lfoot{}
+  \cfoot{}
+  \rfoot{Maxx Seminario, mseminario2@huskers.unl.edu}
+  \renewcommand\headrulewidth{0.4pt}
+  \renewcommand\footrulewidth{0.4pt}
+}
+
+\title{\textbf{\Huge Bridge and Center-Tap Rectifiers with Shunt Voltage Regulation}\\
+\large Lab 3 — ECEN 222: Electronic Circuits}
+\author{
+\large University of Nebraska–Lincoln\\
+\large Department of Electrical and Computer Engineering\\
+}
+\date{}
+
+\begin{document}
+\thispagestyle{fancy}
+\maketitle
+\rule{\textwidth}{0.5pt}
+
+\section{Objectives}
+
+The primary objective of this lab is to investigate full-wave rectifier configurations and implement practical voltage regulation using Zener diodes. Upon completion of this lab, students will understand the operational differences between bridge rectifiers and center-tap rectifiers, compare the performance characteristics of both configurations including component utilization and voltage outputs, design and implement shunt voltage regulators using Zener diodes, characterize voltage regulation performance under varying load conditions, and analyze load regulation, line regulation, and efficiency of practical power supply circuits.  Students will also gain experience with transformer-based power supplies and understand the practical considerations in selecting between different rectifier topologies.  Through hands-on measurements and analysis, students will connect theoretical power supply design concepts with real-world regulated power supply implementation.
+
+\section{Pre-Lab Preparation}
+
+Before arriving at the lab session, students are required to thoroughly prepare by reading the relevant material from the course textbook.  Specifically, review Chapter 4 (Diodes) in Sedra \& Smith, focusing on sections covering full-wave rectifier circuits, center-tap rectifier configurations, and Zener diode shunt regulators. Review the concepts of load regulation (how output voltage changes with load current) and line regulation (how output voltage changes with input voltage variations). Additionally, study transformer operation including turns ratio, voltage transformation, and the concept of center-tapped secondary windings. Students must also complete the pre-lab questions provided in Section \ref{sec:prelab} and come prepared with a plan for organizing and recording measurement data during the lab session.  Proper preparation will ensure efficient use of lab time and deeper understanding of the experimental results.
+
+\section{Background Theory}
+
+\subsection{Full-Wave Rectifier Configurations}
+
+Full-wave rectification, where both halves of the AC input cycle contribute to the DC output, can be achieved using two distinct circuit topologies:  the bridge rectifier and the center-tap rectifier. Each configuration has advantages and disadvantages that make it more suitable for particular applications. Understanding these trade-offs is essential for practical power supply design.
+
+\subsection{Bridge Rectifier}
+
+The bridge rectifier, which you studied in Lab 2, uses four diodes arranged in a bridge configuration to achieve full-wave rectification without requiring a center-tapped transformer. During the positive half-cycle of the AC input, diodes $D_1$ and $D_2$ conduct, directing current through the load in one direction. During the negative half-cycle, diodes $D_3$ and $D_4$ conduct, maintaining current flow through the load in the same direction. The key characteristic of the bridge rectifier is that two diodes are always in the conduction path, resulting in a voltage drop of approximately $2V_D \approx 1.4$ V for silicon diodes. \\
+
+For an ideal bridge rectifier with peak input voltage $V_p$, the average DC output voltage is: 
+
+\begin{equation}
+    V_{DC} = \frac{2V_p}{\pi} \approx 0.637 V_p
+    \label{eq:bridge_dc_ideal}
+\end{equation}
+
+Accounting for the two diode voltage drops: 
+
+\begin{equation}
+    V_{DC} = \frac{2(V_p - 2V_D)}{\pi}
+    \label{eq:bridge_dc_real}
+\end{equation}
+
+Each diode must withstand a peak inverse voltage (PIV) equal to the peak input voltage:
+
+\begin{equation}
+    \text{PIV}_{\text{bridge}} = V_p
+\end{equation}
+
+The advantages of the bridge rectifier include no requirement for a center-tapped transformer (reducing transformer cost and size) and full utilization of the transformer secondary winding (current flows through the entire winding during both half-cycles). The disadvantages include higher voltage drop due to two diodes in series (reducing efficiency, especially at low voltages) and requiring four diodes instead of two. 
+
+\subsection{Center-Tap Rectifier}
+
+The center-tap (or full-wave center-tap) rectifier uses a transformer with a center-tapped secondary winding and only two diodes.  The center tap provides a reference point (typically ground), and the two ends of the secondary winding provide voltages that are 180° out of phase with each other. During one half-cycle, one diode conducts from one end of the secondary winding to the load.  During the other half-cycle, the other diode conducts from the opposite end of the secondary to the load. At any given time, only one diode conducts, so only one diode voltage drop is lost. \\ 
+
+If each half of the secondary winding has a peak voltage $V_p$ (referenced to the center tap), the average DC output voltage is: \\
+
+\begin{equation}
+    V_{DC} = \frac{2(V_p - V_D)}{\pi}
+    \label{eq:centertap_dc}
+\end{equation}
+
+This is approximately 0.7 V higher than the bridge rectifier output for the same transformer secondary voltage (each half). However, each diode in the center-tap configuration must withstand a PIV equal to twice the peak voltage of one half of the secondary winding: \\
+
+\begin{equation}
+    \text{PIV}_{\text{center-tap}} = 2V_p
+\end{equation}
+
+This occurs because when one diode is conducting, the other diode sees the voltage across the entire secondary winding plus the forward voltage drop of the conducting diode.  \\
+
+The advantages of the center-tap rectifier include lower voltage drop (only one diode in conduction path, improving efficiency) and requiring only two diodes.  The disadvantages include requiring a center-tapped transformer (increasing cost and size), poor transformer utilization (only half the secondary winding carries current at any time), and higher PIV stress on diodes (requiring diodes with higher voltage ratings). 
+
+\subsection{Comparison of Rectifier Configurations}
+
+For the same DC output voltage, the center-tap configuration requires a transformer with a secondary voltage approximately 0.7 V lower per half than the bridge configuration requires total.  However, the center-tap transformer must be center-tapped and must be designed to handle the fact that each half of the winding carries current only half the time. The bridge configuration makes more efficient use of the transformer but loses more voltage in the diodes. \\
+
+In modern low-voltage applications, the bridge rectifier is generally preferred due to the availability of inexpensive diodes and the elimination of the center-tap requirement. In high-voltage, low-current applications, the center-tap configuration may be preferred due to lower diode losses and fewer diodes.  In applications where transformers are not used (such as rectifying AC line voltage directly), only the bridge configuration is practical.
+
+\subsection{Shunt Voltage Regulation with Zener Diodes}
+
+The simple filtered rectifier circuits studied in Lab 2 produce a DC output voltage that varies with both input voltage changes (line variations) and load current changes (load variations). Many electronic circuits require a stable, regulated voltage that remains constant despite these variations. The simplest form of voltage regulation uses a Zener diode in a shunt (parallel) configuration. \\
+
+A basic Zener shunt regulator consists of a series resistor $R_S$ (often called the dropping resistor or series resistor) connected between the unregulated DC input voltage $V_{in}$ and the load, with a Zener diode connected in parallel with the load as shown in Figure \ref{fig:shunt_reg_concept}. The Zener diode is reverse-biased and operates in its breakdown region, maintaining an approximately constant voltage $V_Z$ across the load.  \\
+
+\begin{figure}[h]
+    \centering
+    \begin{circuitikz}[american]
+        \draw (0,0) to[V, l=$V_{in}$] (0,3)
+              to[R, l=$R_S$, i=$I_S$] (3,3);
+        \draw (3,3) to[short, i=$I_Z$] (4. 5,3);
+        \draw (4.5,3) to[zD, l=$D_Z$, v=$V_Z$] (4.5,0);
+        \draw (3,3) to[short, i=$I_L$, *-] (6,3);
+        \draw (6,3) to[R, l=$R_L$, v=$V_o$] (6,0);
+        \draw (0,0) to[short] (6,0);
+        \draw (3,0) node[ground]{};
+    \end{circuitikz}
+    \caption{Basic Zener shunt voltage regulator circuit. }
+    \label{fig:shunt_reg_concept}
+\end{figure}
+
+The operation principle is straightforward.  The series resistor $R_S$ drops the difference between the input voltage and the desired output voltage. The Zener diode maintains a constant voltage $V_Z$ across the load by absorbing variations in current.  When the load current decreases, the Zener current increases to maintain constant current through $R_S$ (and thus constant voltage drop across $R_S$). When the load current increases, the Zener current decreases.  Similarly, when the input voltage increases, the Zener current increases to absorb the extra current while maintaining constant output voltage. \\
+
+By Kirchhoff's current law: 
+
+\begin{equation}
+    I_S = I_Z + I_L
+    \label{eq:kcl_reg}
+\end{equation}
+
+where $I_S$ is the current through the series resistor, $I_Z$ is the Zener current, and $I_L$ is the load current. \\
+
+The voltage across the series resistor is: \\
+
+\begin{equation}
+    V_{R_S} = V_{in} - V_Z
+\end{equation}
+
+Therefore, the current through the series resistor is: \\
+
+\begin{equation}
+    I_S = \frac{V_{in} - V_Z}{R_S}
+    \label{eq:is_calc}
+\end{equation}
+
+For proper regulation, the Zener diode must remain in breakdown, which requires: \\
+
+\begin{equation}
+    I_Z \geq I_{Z,\min}
+\end{equation}
+
+where $I_{Z,\min}$ is the minimum Zener current required to maintain breakdown (typically a few milliamperes, specified in the datasheet). This condition must be satisfied under all operating conditions, particularly at maximum load current.\\
+
+The maximum Zener current occurs at minimum load (no load, or $I_L = 0$):\\
+
+\begin{equation}
+    I_{Z,\max} = I_S = \frac{V_{in} - V_Z}{R_S}
+\end{equation}
+
+The power dissipated in the Zener diode is:\\
+
+\begin{equation}
+    P_Z = V_Z \cdot I_Z
+\end{equation}
+
+This must not exceed the Zener's power rating under any operating condition. \\
+
+\subsection{Design of Zener Shunt Regulators}
+
+Designing a Zener shunt regulator involves selecting appropriate values for $R_S$ and the Zener diode rating. The design process typically follows these steps:\\
+
+\begin{enumerate}
+    \item Select a Zener diode with voltage rating $V_Z$ equal to the desired output voltage.
+    \item Determine the range of input voltage $V_{in,\min}$ to $V_{in,\max}$ and load current $I_{L,\min}$ to $I_{L,\max}$. 
+    \item Calculate the required series resistance to maintain adequate Zener current under worst-case conditions (maximum load current and minimum input voltage).
+    \item Verify that the Zener power dissipation does not exceed its rating under worst-case conditions (minimum load current and maximum input voltage).
+\end{enumerate}
+
+A common design approach is to choose $R_S$ such that the current through it (when the load is disconnected) is approximately twice the maximum expected load current. This ensures that adequate current flows through the Zener to maintain regulation even when the full load is connected.\\
+
+\subsection{Regulation Performance Metrics}
+
+The performance of a voltage regulator is characterized by several metrics:\\
+
+\textbf{Load Regulation:} This measures how much the output voltage changes as the load current varies from no-load to full-load, with constant input voltage:\\
+
+\begin{equation}
+    \text{Load Regulation} = \frac{V_{o,\text{no-load}} - V_{o,\text{full-load}}}{V_{o,\text{full-load}}} \times 100\%
+    \label{eq:load_reg}
+\end{equation}
+
+Ideally, load regulation should be 0\% (no change in output voltage with load).\\
+
+\textbf{Line Regulation:} This measures how much the output voltage changes as the input voltage varies over its specified range, with constant load: \\
+
+\begin{equation}
+    \text{Line Regulation} = \frac{\Delta V_o}{\Delta V_{in}} \times 100\%
+    \label{eq:line_reg}
+\end{equation}
+
+or sometimes expressed as the absolute change in output voltage per unit change in input voltage. \\
+
+\textbf{Efficiency:} This is the ratio of power delivered to the load to the total power drawn from the input:\\
+
+\begin{equation}
+    \eta = \frac{P_o}{P_{in}} = \frac{V_o I_L}{V_{in} I_S} \times 100\%
+    \label{eq:efficiency}
+\end{equation}
+
+Zener shunt regulators generally have poor efficiency, especially under light load conditions, because significant power is dissipated in both the series resistor and the Zener diode.\\
+
+\section{Equipment and Components}
+
+\subsection{Equipment}
+\begin{itemize}
+    \item Function generator or AC power supply (capable of providing 12 V RMS at 60 Hz)
+    \item Center-tapped transformer (12 V center-tap secondary, or as specified by instructor)
+    \item Oscilloscope with at least two channels
+    \item Digital multimeter (DMM) 
+    \item Solderless breadboard
+    \item Connecting wires
+    \item Oscilloscope probes
+\end{itemize}
+
+\subsection{Components}
+\begin{itemize}
+    \item Silicon rectifier diodes 
+    \item Zener diode 
+    \item Electrolytic capacitors
+    \item Resistors
+    \item Potentiometer
+\end{itemize}
+
+\section{Experimental Procedures}
+
+\subsection{Part 1: Bridge Rectifier with Filter}
+
+Begin by constructing a full-wave bridge rectifier with filter capacitor as shown in Figure \ref{fig:bridge_filtered_lab3}. This circuit should be familiar from Lab 2. Use four rectifier diodes in the bridge configuration, the 1000 $\mu$F filter capacitor, and initially use a 2.2 k$\Omega$ load resistor. Connect your AC source to provide approximately 12 V RMS at 60 Hz.  Verify the polarity of the electrolytic capacitor before applying power.\\
+
+\begin{figure}[h]
+    \centering
+    \begin{circuitikz}[american]
+        \draw (0,1. 5) to[sV, l=$v_{AC}$] (0,4. 5);
+        % Bridge
+        \draw (0,4.5) to[short] (1,4.5)
+              to[D, l=$D_1$] (3,4.5)
+              to[short] (4.5,4.5);
+        \draw (1,4.5) to[D, l=$D_3$, *-*] (1,1.5);
+        \draw (0,1.5) to[short] (3,1.5)
+              to[D, l=$D_2$] (3,4.5);
+        \draw (3,1.5) to[short] (6,1.5);
+        % Load and cap
+        \draw (4.5,4.5) to[R, l=$R_L$, v=$V_o$] (4.5,1.5);
+        \draw (6,4.5) to[C, l=$C$] (6,1.5);
+        \draw (4.5,4.5) to[short] (6,4.5);
+        \draw (2. 25,1.5) node[ground]{};
+    \end{circuitikz}
+    \caption{Bridge rectifier with filter capacitor for Part 1.}
+    \label{fig:bridge_filtered_lab3}
+\end{figure}
+
+Connect the oscilloscope to observe the output voltage waveform across the load resistor. Measure and record the DC output voltage $V_o$ using the DMM, the peak output voltage, the minimum output voltage, and calculate the peak-to-peak ripple voltage $V_r$.  Measure the ripple frequency and verify it is 120 Hz (twice the AC line frequency). Also measure the AC input voltage (RMS and peak values).\\
+
+Replace the load resistor with the 1 k$\Omega$ resistor and repeat the measurements. Then use the 4.7 k$\Omega$ resistor and repeat once more. For each load value, calculate the load current as $I_L = V_o / R_L$ and observe how the DC output voltage and ripple voltage change with load current. \\
+
+In your lab report, present oscilloscope waveforms for at least one load condition, showing the ripple voltage clearly. Create a table or plot showing how DC output voltage and ripple voltage vary with load resistance.  Explain why the output voltage decreases and ripple increases with heavier loading (smaller resistance). This unregulated bridge rectifier will serve as the baseline for comparison with the regulated version you will build later.\\
+
+\subsection{Part 2: Center-Tap Rectifier with Filter}
+
+Now you will construct a center-tap rectifier to compare with the bridge configuration. Using the center-tapped transformer provided by your instructor, construct the circuit shown in Figure \ref{fig:centertap_circuit}. Connect one end of the secondary winding through diode $D_1$ to the positive output terminal, and the other end of the secondary winding through diode $D_2$ to the same positive output terminal. The center tap of the transformer connects to ground.  Use the 1000 $\mu$F filter capacitor and the 2.2 k$\Omega$ load resistor. \\
+
+\begin{figure}[h]
+    \centering
+    \begin{circuitikz}[american]
+        % Transformer with center tap
+        \draw (0,4) to[sV, l=$v_{AC}$] (0,2);
+        \draw (0,2) to[short] (0. 5,2);
+        \draw (0.5,1.5) rectangle (1.5,4. 5);
+        \draw (1.5,4) to[short] (2,4)
+              to[D, l=$D_1$] (4,4)
+              to[short] (5. 5,4);
+        \draw (1.5,2) to[D, l=$D_2$] (4,2)
+              to[short] (4,4);
+        \draw (1.5,3) to[short, *-] (2.5,3);
+        \draw (2.5,3) to[short] (2.5,0. 5);
+        % Load and capacitor
+        \draw (4,4) to[R, l=$R_L$, v=$V_o$, *-] (4,0.5);
+        \draw (5.5,4) to[C, l=$C$] (5.5,0.5);
+        \draw (2.5,0.5) to[short] (5.5,0.5);
+        \draw (3.5,0.5) node[ground]{};
+    \end{circuitikz}
+    \caption{Center-tap rectifier with filter capacitor for Part 2.}
+    \label{fig:centertap_circuit}
+\end{figure}
+
+Before applying power, use the DMM to verify the transformer voltages.  Measure the RMS voltage from each end of the secondary to the center tap—these should be approximately equal (around 6 V RMS each for a 12 V center-tap transformer). Also measure the voltage between the two ends of the secondary (should be approximately 12 V RMS).\\
+
+Apply power and observe the output voltage waveform on the oscilloscope. You should see a ripple waveform similar to the bridge rectifier, with 120 Hz ripple frequency. Measure the DC output voltage, peak voltage, minimum voltage, and ripple voltage. Compare the DC output voltage with the bridge rectifier output from Part 1 using the same load resistance. You should observe that the center-tap configuration produces a slightly higher DC output voltage (by approximately 0.7 V) due to the single diode drop instead of two diode drops. \\
+
+Replace the load resistor with the 1 k$\Omega$ and 4.7 k$\Omega$ values, measuring the output voltage and ripple for each as you did in Part 1.\\
+
+In your lab report, present waveforms and measurement data for the center-tap rectifier.  Create a comparison table showing the DC output voltage, ripple voltage, and calculated load current for both bridge and center-tap configurations at each load resistance value. Explain why the center-tap rectifier produces a higher output voltage.  Discuss the trade-offs between the two configurations—under what circumstances would you choose each configuration?\\
+
+\subsection{Part 3: PIV Comparison}
+
+Although you cannot directly measure the PIV without specialized equipment, you can calculate and analyze the PIV requirements for each diode in both rectifier configurations. Using the measured peak AC voltages from Parts 1 and 2, calculate the PIV that each diode must withstand in: \\
+
+\begin{enumerate}
+    \item The bridge rectifier (all four diodes)
+    \item The center-tap rectifier (both diodes)
+\end{enumerate}
+
+For the bridge rectifier, the PIV equals the peak voltage across the transformer secondary. For the center-tap rectifier, recall that when one diode is conducting, the other diode sees the voltage across the entire secondary winding (twice the voltage from center-tap to one end).\\
+
+In your lab report, show these PIV calculations clearly.  Verify that your diodes have adequate PIV ratings (consult datasheets). Explain when each diode experiences its maximum reverse voltage by analyzing the circuit operation during both half-cycles.  Discuss why the center-tap configuration requires diodes with higher PIV ratings even though it produces higher output voltage with lower losses.\\
+
+\subsection{Part 4: Design of Zener Shunt Regulator}
+
+You will now design a Zener shunt regulator to provide a stable output voltage from the bridge rectifier circuit. First, determine the characteristics of your Zener diode.  If you have the datasheet available, note the Zener voltage $V_Z$, minimum Zener current $I_{Z,\min}$, and maximum power rating $P_{Z,\max}$. If datasheets are not available, your instructor will provide these specifications, or you can assume typical values:  $V_Z$ = 5.1 V to 6.2 V (depending on your diode), $I_{Z,\min}$ = 5 mA, and $P_{Z,\max}$ = 1 W. \\
+
+From Part 1, you have measured the DC output voltage of your bridge rectifier under different load conditions. This will serve as the input voltage $V_{in}$ to your regulator.  Assume you want to design the regulator to supply load currents from 0 mA (no load) up to 20 mA (full load) while maintaining regulation. \\
+
+Calculate the required series resistance $R_S$ using the following design approach:\\
+
+\begin{enumerate}
+    \item Choose a design current through the series resistor.  A common choice is to make this current equal to approximately 1.5 to 2 times the maximum load current. For $I_{L,\max}$ = 20 mA, choose $I_S$ $\approx$ 40 mA.
+    
+    \item Calculate the series resistance: 
+    \begin{equation}
+        R_S = \frac{V_{in} - V_Z}{I_S}
+    \end{equation}
+    where $V_{in}$ is the measured DC output from your bridge rectifier (use the value measured with 2.2 k$\Omega$ load).
+    
+    \item Select the nearest standard resistor value.  Choose from the available resistors (100 $\Omega$, 220 $\Omega$, or 470 $\Omega$).
+    
+    \item Verify that the Zener power dissipation at no load does not exceed the rating:
+    \begin{equation}
+        P_{Z,\text{no-load}} = V_Z \cdot I_S
+    \end{equation}
+    This should be less than $P_{Z,\max}$. 
+    
+    \item Verify that the Zener current at full load is sufficient to maintain breakdown:
+    \begin{equation}
+        I_{Z,\text{full-load}} = I_S - I_{L,\max}
+    \end{equation}
+    This should be greater than $I_{Z,\min}$.
+\end{enumerate}
+
+Show all design calculations in your lab report. If your calculated $R_S$ value does not correspond to an available resistor, select the closest value and recalculate the actual currents and power dissipations.\\
+
+\subsection{Part 5: Implementation and Testing of Shunt Regulator}
+
+Construct the complete regulated power supply by adding the Zener shunt regulator to your bridge rectifier from Part 1. The circuit should include the AC source, bridge rectifier, 1000 $\mu$F filter capacitor, series resistor $R_S$ (the value you calculated in Part 4), Zener diode, and provision for connecting different load resistors as shown in Figure \ref{fig:regulated_supply}.\\
+
+\begin{figure}[h]
+    \centering
+    \begin{circuitikz}[american]
+        % AC source and bridge (simplified)
+        \draw (0,0) node[transformer,cute](T){};
+        \draw (T.B2) to[short] (1.5,0.5);
+        \draw (T.B1) to[short] (1.5,-0.5);
+        \draw (1.5,0.5) to[short] (2,0.5);
+        \draw (1.5,-0.5) to[short] (2,-0.5);
+        % Bridge output
+        \draw (2,0.5) rectangle node{Bridge} (4,1.5);
+        \draw (2,-0.5) rectangle (4,-1.5);
+        % Filter cap
+        \draw (4,1) to[short] (5,1);
+        \draw (5,1) to[C, l=$C$] (5,-1);
+        \draw (4,-1) to[short] (5,-1);
+        % Series resistor
+        \draw (5,1) to[R, l=$R_S$, i=$I_S$, *-] (7. 5,1);
+        % Zener
+        \draw (7.5,1) to[short, i=$I_Z$, *-] (9,1);
+        \draw (9,1) to[zD, l=$D_Z$, v=$V_Z$] (9,-1);
+        % Load
+        \draw (7.5,1) to[short, i=$I_L$, *-] (10.5,1);
+        \draw (10.5,1) to[R, l=$R_L$, v=$V_o$] (10.5,-1);
+        \draw (5,-1) to[short] (10.5,-1);
+        \draw (7.5,-1) node[ground]{};
+    \end{circuitikz}
+    \caption{Complete regulated power supply with bridge rectifier and Zener shunt regulator.}
+    \label{fig:regulated_supply}
+\end{figure}
+
+Pay careful attention to the polarity of the Zener diode—the cathode should be connected to the positive terminal (toward $R_S$) and the anode to ground. The Zener must be reverse-biased to operate in breakdown. \\
+
+First, test the circuit with no load connected (remove $R_L$ or set it to a very high value). Measure the output voltage $V_o$ using the DMM. This should be approximately equal to the Zener voltage $V_Z$. Measure the current through the series resistor by measuring the voltage across it and calculating $I_S = V_{R_S}/R_S$. Since there is no load, this current is entirely flowing through the Zener diode:  $I_Z = I_S$. Verify that the Zener is not overheating—calculate $P_Z = V_Z \cdot I_Z$ and ensure it is within the power rating. \\
+
+Now connect a 4.7 k$\Omega$ load resistor and measure the output voltage. Calculate the load current as $I_L = V_o/R_L$. The output voltage should remain very close to the no-load value, demonstrating voltage regulation. Replace the load with progressively smaller resistances (2.2 k$\Omega$, 1 k$\Omega$, 470 $\Omega$), measuring the output voltage at each value. For each load condition, also measure the voltage across the series resistor to calculate $I_S$, and calculate the Zener current as $I_Z = I_S - I_L$.\\
+
+Continue decreasing the load resistance until one of the following occurs:  (1) the output voltage begins to drop significantly, indicating loss of regulation, or (2) you reach the minimum safe load resistance based on component ratings.  Loss of regulation occurs when the Zener current becomes too small to maintain breakdown ($I_Z < I_{Z,\min}$).\\
+
+In your lab report, create a table showing output voltage, load current, series current, Zener current, and Zener power dissipation for each load resistance value tested. Plot output voltage versus load current.  Describe what you observe about the output voltage as load current increases. At what load current does regulation begin to fail? Explain this in terms of Zener current.  Calculate the Zener current for each load condition and verify that regulation is maintained as long as $I_Z \geq I_{Z,\min}$.\\
+
+\subsection{Part 6: Load Regulation Characterization}
+
+Using your data from Part 5, calculate the load regulation of your Zener shunt regulator using Equation \ref{eq:load_reg}.  Use the no-load output voltage as $V_{o,\text{no-load}}$ and the output voltage at the maximum load current (where regulation is still maintained) as $V_{o,\text{full-load}}$. 
+
+Also calculate the output resistance of the regulator, which characterizes how much the output voltage changes per unit change in load current: \\
+
+\begin{equation}
+    R_o = \frac{\Delta V_o}{\Delta I_L}
+\end{equation}
+
+Select two load conditions where the regulator is operating properly and calculate the output resistance from the change in voltage and current between these two points. The output resistance is primarily determined by the Zener dynamic resistance $r_z$. 
+
+In your lab report, calculate and report the load regulation percentage and output resistance.  Compare the load regulation of the regulated supply with the unregulated bridge rectifier from Part 1. Explain why the Zener regulator maintains more constant output voltage.  Discuss the factors that limit the maximum load current that can be supplied while maintaining regulation.\\
+
+\subsection{Part 7: Line Regulation Characterization}
+
+To test line regulation, you will vary the input voltage to the rectifier and observe the effect on the regulated output voltage. If your AC source allows voltage adjustment, vary the AC input voltage from approximately 10 V RMS to 14 V RMS in 1 V increments (or as appropriate for your equipment). For each input voltage setting, measure the AC input voltage (RMS), the DC voltage at the input to the regulator (output of the filter capacitor), and the regulated output voltage $V_o$. Keep the load constant at 2.2 k$\Omega$ for these measurements.\\
+
+If your AC source does not allow easy voltage adjustment, you can simulate line variation by modifying the circuit:  temporarily remove the filter capacitor and insert a variable resistor in series with the bridge rectifier input to create adjustable voltage drops, or your instructor may provide alternative methods.\\
+
+Calculate the line regulation as the percentage change in output voltage per unit change in input voltage, or as the absolute change $\Delta V_o / \Delta V_{in}$. \\
+
+In your lab report, create a table showing input voltage, unregulated DC voltage, and regulated output voltage for each input condition. Plot regulated output voltage versus unregulated input voltage. Calculate the line regulation.  Explain why the output voltage remains relatively constant despite input voltage changes.  Compare the line regulation of the regulated supply with the unregulated rectifier. \\
+
+\subsection{Part 8: Efficiency Analysis}
+
+Calculate the efficiency of your regulated power supply under several different load conditions.  For each load resistance value from Part 5 where regulation was maintained, calculate: \\
+
+\begin{enumerate}
+    \item Output power:  $P_o = V_o \cdot I_L = V_o^2 / R_L$
+    \item Input power: $P_{in} = V_{in} \cdot I_S$, where $V_{in}$ is the unregulated DC voltage from the filter capacitor
+    \item Efficiency: $\eta = (P_o / P_{in}) \times 100\%$
+\end{enumerate}
+
+Also calculate the power dissipated in each component:
+\begin{itemize}
+    \item Series resistor: $P_{R_S} = I_S^2 \cdot R_S$
+    \item Zener diode: $P_Z = V_Z \cdot I_Z$
+    \item Load: $P_L = V_o \cdot I_L$ (this equals $P_o$)
+\end{itemize}
+
+Verify that power is conserved:  $P_{in} = P_{R_S} + P_Z + P_L$ (within measurement error).\\
+
+In your lab report, create a table showing the power dissipations and efficiency for each load condition. Plot efficiency versus load current. Describe how efficiency varies with load.  Explain why efficiency is poor at light loads (the Zener dissipates most of the power) and improves at heavier loads (more power goes to the load, less to the Zener). Discuss the fundamental limitation of shunt regulators—they can never achieve high efficiency because they waste power in the series resistor and Zener diode.  This motivates the development of more sophisticated regulators (series regulators and switching regulators).\\
+
+\section{Pre-Lab Questions}
+\label{sec:prelab}
+
+Complete these questions before coming to the lab session.  Include your answers and all supporting work in your lab report.\\
+
+\begin{enumerate}
+    \item A center-tapped transformer has 6 V RMS from each end of the secondary to the center tap. For a center-tap rectifier using this transformer with silicon diodes ($V_D = 0.7$ V), calculate (a) the peak voltage from each end to center tap, (b) the peak output voltage of the rectifier, (c) the average (DC) output voltage, and (d) the PIV each diode must withstand.  Show all work.
+    
+    \item A bridge rectifier operates from a 12 V RMS AC source. Calculate (a) the peak input voltage, (b) the peak output voltage accounting for diode drops ($V_D = 0.7$ V), (c) the average DC output voltage, and (d) the PIV each diode must withstand. Show all work.
+    
+    \item Compare your answers from questions 1 and 2. Which configuration produces higher DC output voltage? Which requires diodes with higher PIV rating? Explain. 
+    
+    \item A Zener shunt regulator has $V_{in} = 15$ V (DC), $V_Z = 5.1$ V, $R_S = 220$ $\Omega$, and $R_L = 1$ k$\Omega$. Calculate (a) the current through the series resistor $I_S$, (b) the load current $I_L$, (c) the Zener current $I_Z$, (d) the power dissipated in the Zener diode, and (e) the power dissipated in the series resistor. Show all work. 
+    
+    \item For the regulator in question 4, calculate the efficiency when the load resistor is 1 k$\Omega$. Then recalculate the efficiency if the load is changed to 4.7 k$\Omega$.  Explain why efficiency changes.  Show all work.
+    
+    \item A Zener diode has a maximum power rating of 1 W and $V_Z = 5.1$ V. What is the maximum continuous current the Zener can safely handle? If this Zener is used in a shunt regulator with $R_S = 100$ $\Omega$ and $V_{in} = 12$ V, is the Zener safe under no-load conditions? Show calculations.
+    
+    \item Explain in your own words the difference between load regulation and line regulation. Why are both important characteristics of a voltage regulator?
+    
+    \item Research and briefly explain why shunt regulators (Zener regulators) are generally not used for high-current applications.  What type of regulator would be more appropriate for supplying large currents?
+\end{enumerate}
+
+\end{document}

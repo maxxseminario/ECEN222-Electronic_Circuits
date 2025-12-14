@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.2)  13 DEC 2025 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.2)  13 DEC 2025 17:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/labs/lab01_diodes/lab01_diodes.tex"
-(c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/labs/lab01_diodes/lab01_diodes.tex
+**"c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/labs/lab02_diode_rectifiers/lab02_diode_rectifiers.tex"
+(c:/Users/mseminario2/Home/Courses/ECEN/ECEN-222(Inst) (UCEP)/latek/labs/lab02_diode_rectifiers/lab02_diode_rectifiers.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
 (c:/texlive/2025/texmf-dist/tex/latex/latex-lab/documentmetadata-support.ltx (c:/texlive/2025/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanagement-testphase.sty
@@ -906,31 +906,31 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 84.
- (./lab01_diodes.aux)
-\openout1 = `lab01_diodes.aux'.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 78.
+ (./lab02_diode_rectifiers.aux)
+\openout1 = `lab02_diode_rectifiers.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
 
-Info: mathml file lab01_diodes-mathml does not exist
-Info: mathml file lab01_diodes-luamml-mathml does not exist
+Info: mathml file lab02_diode_rectifiers-mathml does not exist
+Info: mathml file lab02_diode_rectifiers-luamml-mathml does not exist
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -983,7 +983,7 @@ Info: mathml file lab01_diodes-luamml-mathml does not exist
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 78.
  (c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
  (c:/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
@@ -994,167 +994,187 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 84.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 78.
 
 
 LaTeX DocumentMetadata Warning: The language has not been set in
 (DocumentMetadata)              \DocumentMetadata.
 (DocumentMetadata)              Setting it to 'en' as fallback.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-====>grabbed math=macro:->i_D = I_S \left ( e^{v_D / n V_T} - 1 \right ) \label {eq:shockley}
-====>grabbed math=macro:->i_D
-====>grabbed math=macro:->I_S
-====>grabbed math=macro:->10^{-14}
-====>grabbed math=macro:->10^{-15}
-====>grabbed math=macro:->v_D
-====>grabbed math=macro:->n
-====>grabbed math=macro:->V_T
-====>grabbed math=macro:->V_T = \frac {kT}{q}
+
+LaTeX Warning: Reference `fig: halfwave_circuit' on page 1 undefined on input line 101.
+
 
 
 [1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 
 ]
-====>grabbed math=macro:->k = 1.38 \times 10^{-23}
+====>grabbed math=macro:->v_i(t) = V_p \sin (\omega t)
+====>grabbed math=macro:->V_p
+====>grabbed math=macro:->\omega = 2\pi f
+====>grabbed math=macro:->V_{DC} = \frac {V_p}{\pi } \approx 0.318 V_p \label {eq:halfwave_dc}
+====>grabbed math=macro:->V_D \approx 0.7
+====>grabbed math=macro:->V_p - V_D
+====>grabbed math=macro:->V_{DC} = \frac {V_p - V_D}{\pi } \label {eq:halfwave_dc_real}
+====>grabbed math=macro:->V_p
+====>grabbed math=macro:->\text {PIV} \geq V_p
+====>grabbed math=macro:->D_1
+====>grabbed math=macro:->D_2
+====>grabbed math=macro:->D_3
+====>grabbed math=macro:->D_4
+====>grabbed math=macro:->D_3
+====>grabbed math=macro:->D_4
+====>grabbed math=macro:->D_1
+====>grabbed math=macro:->D_2
+====>grabbed math=macro:->V_{DC} = \frac {2V_p}{\pi } \approx 0.637 V_p \label {eq:fullwave_dc}
+====>grabbed math=macro:->2V_D \approx 1.4
+====>grabbed math=macro:->V_{DC} = \frac {2(V_p - 2V_D)}{\pi } \label {eq:fullwave_dc_real}
+====>grabbed math=macro:->\text {PIV} \geq V_p
+
+
+[2]
+====>grabbed math=macro:->V_r
+====>grabbed math=macro:->C
+====>grabbed math=macro:->R_L
 ====>grabbed math=macro:->T
-====>grabbed math=macro:->q = 1.60 \times 10^{-19}
-====>grabbed math=macro:->v_D > 0
-====>grabbed math=macro:->v_D < 0
-====>grabbed math=macro:->i_D \approx -I_S
-====>grabbed math=macro:->I_S
-====>grabbed math=macro:->r_d = \frac {dv_D}{di_D} \bigg |_{Q} = \frac {nV_T}{I_D} \label {eq:dynamic_r}
-====>grabbed math=macro:->I_D
-====>grabbed math=macro:->n = 1
+====>grabbed math=macro:->V_r \approx \frac {V_p}{f R_L C} \label {eq: ripple}
+====>grabbed math=macro:->f
+====>grabbed math=macro:->V_{DC} \approx V_p - \frac {V_r}{2} \label {eq:dc_filtered}
+====>grabbed math=macro:->r = \frac {V_{r,RMS}}{V_{DC}}
+====>grabbed math=macro:->\mu 
+====>grabbed math=macro:->\mu 
+====>grabbed math=macro:->\mu 
+====>grabbed math=macro:->\geq 
 ====>grabbed math=macro:->\Omega 
-====>grabbed math=macro:->V_Z
+====>grabbed math=macro:->\Omega 
+====>grabbed math=macro:->\Omega 
+====>grabbed math=macro:->\Omega 
 
 
-[2{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-====>grabbed math=macro:->V_Z
-====>grabbed math=macro:->r_z
-====>grabbed math=macro:->V_{Z,actual} = V_Z + r_z \cdot I_Z
-====>grabbed math=macro:->I_Z
-====>grabbed math=macro:->r_z
-====>grabbed math=macro:->P_Z = V_Z \times I_Z
+[3{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 ====>grabbed math=macro:->\Omega 
-====>grabbed math=macro:->V_D
-====>grabbed math=macro:->I_D
-====>grabbed math=macro:->I_D = V_R / R
-Floatstructure:170
-====>grabbed math=macro:->\vphantom {+}-
-====>grabbed math=macro:->+
-====>grabbed math=macro:->V_S
-====>grabbed math=macro:->R
-====>grabbed math=macro:->I_D
+Floatstructure:217
+====>grabbed math=macro:->v_{AC}
 ====>grabbed math=macro:->D
+====>grabbed math=macro:->R_L
 \absvshift=\dimen346
 ====>grabbed math=macro:->+
 ====>grabbed math=macro:->\vphantom {+}-
-====>grabbed math=macro:->V_D
+====>grabbed math=macro:->v_o
+====>grabbed math=macro:->V_{p,in}
+====>grabbed math=macro:->V_{p,out}
+====>grabbed math=macro:->\mu 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `fig: halfwave_filtered' on page 4 undefined on input line 232.
 
-====>grabbed math=macro:->V_S
-====>grabbed math=macro:->V_D
-====>grabbed math=macro:->I_D
-
-
-[3]
-====>grabbed math=macro:->V_{D1} \approx 0.65
-====>grabbed math=macro:->V_{D2} \approx 0.75
-====>grabbed math=macro:->r_d \approx \frac {\Delta V_D}{\Delta I_D}
-====>grabbed math=macro:->\Delta V_D
-====>grabbed math=macro:->\Delta I_D
-====>grabbed math=macro:->n
-
-
-[4]
-====>grabbed math=macro:->\Omega 
-Floatstructure:221
-====>grabbed math=macro:->\vphantom {+}-
-====>grabbed math=macro:->+
-====>grabbed math=macro:->V_S
-====>grabbed math=macro:->R
-====>grabbed math=macro:->I_D
+Floatstructure:245
+====>grabbed math=macro:->v_{AC}
 ====>grabbed math=macro:->D
+====>grabbed math=macro:->R_L
 \absvshift=\dimen347
 ====>grabbed math=macro:->+
 ====>grabbed math=macro:->\vphantom {+}-
-====>grabbed math=macro:->V_D
-====>grabbed math=macro:->V_D
-====>grabbed math=macro:->I_D
-====>grabbed math=macro:->I_S
-====>grabbed math=macro:->\Omega 
-Floatstructure:252
-====>grabbed math=macro:->\vphantom {+}-
-====>grabbed math=macro:->+
-====>grabbed math=macro:->V_S
-====>grabbed math=macro:->R
-====>grabbed math=macro:->I_Z
-====>grabbed math=macro:->D_Z
-\absvshift=\dimen348
-====>grabbed math=macro:->+
-====>grabbed math=macro:->\vphantom {+}-
-====>grabbed math=macro:->V_Z
+====>grabbed math=macro:->v_o
+====>grabbed math=macro:->C
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-====>grabbed math=macro:->V_Z
-====>grabbed math=macro:->I_Z
-====>grabbed math=macro:->V_S
-====>grabbed math=macro:->V_Z
-====>grabbed math=macro:->I_Z
+
+
+[4]
+====>grabbed math=macro:->V_{peak}
+====>grabbed math=macro:->V_{min}
+====>grabbed math=macro:->V_r = V_{peak} - V_{min}
+====>grabbed math=macro:->V_{DC} \approx V_{peak} - V_r/2
+====>grabbed math=macro:->\mu 
+====>grabbed math=macro:->\mu 
+====>grabbed math=macro:->\mu 
+
+LaTeX Warning: Reference `eq:ripple' on page 5 undefined on input line 257.
+
+====>grabbed math=macro:->\mu 
+====>grabbed math=macro:->\Omega 
+====>grabbed math=macro:->\Omega 
+====>grabbed math=macro:->\Omega 
+====>grabbed math=macro:->I_{DC} = V_{DC}/R_L
+====>grabbed math=macro:->r = V_r/(2\sqrt {3} \cdot V_{DC})
+====>grabbed math=macro:->2\sqrt {3}
+====>grabbed math=macro:->\Omega 
+====>grabbed math=macro:->D_1
+====>grabbed math=macro:->D_2
+====>grabbed math=macro:->D_3
+====>grabbed math=macro:->D_4
 
 
 [5]
-====>grabbed math=macro:->V_Z
-====>grabbed math=macro:->P_Z = V_Z \times I_Z
-====>grabbed math=macro:->V_S \approx 7
-====>grabbed math=macro:->V_S \approx 10
-====>grabbed math=macro:->r_z = \frac {\Delta V_Z}{\Delta I_Z}
-====>grabbed math=macro:->\Delta V_Z
-====>grabbed math=macro:->\Delta I_Z
-====>grabbed math=macro:->r_z
-====>grabbed math=macro:->\Omega 
-====>grabbed math=macro:->r_z
-====>grabbed math=macro:->r_z
+Floatstructure:303
+====>grabbed math=macro:->v_{AC}
+====>grabbed math=macro:->D_1
+====>grabbed math=macro:->D_3
+====>grabbed math=macro:->D_2
+====>grabbed math=macro:->R_L
+\absvshift=\dimen348
+====>grabbed math=macro:->+
+====>grabbed math=macro:->\vphantom {+}-
+====>grabbed math=macro:->v_o
+====>grabbed math=macro:->1.4
+====>grabbed math=macro:->\mu 
+
+LaTeX Warning: Reference `fig: bridge_filtered' on page 6 undefined on input line 300.
+
+Floatstructure:331
+====>grabbed math=macro:->v_{AC}
+====>grabbed math=macro:->D_1
+====>grabbed math=macro:->D_3
+====>grabbed math=macro:->D_2
+====>grabbed math=macro:->R_L
+\absvshift=\dimen349
+====>grabbed math=macro:->+
+====>grabbed math=macro:->\vphantom {+}-
+====>grabbed math=macro:->v_o
+====>grabbed math=macro:->C
 
 
 [6]
-====>grabbed math=macro:->I_S = 10^{-14}
-====>grabbed math=macro:->V_T \approx 25
+
+LaTeX Warning: Reference `eq:ripple' on page 7 undefined on input line 326.
+
+====>grabbed math=macro:->f = 120
 ====>grabbed math=macro:->V_D = 0.7
-====>grabbed math=macro:->n = 1
-====>grabbed math=macro:->V_S = 5
-====>grabbed math=macro:->R = 1
+====>grabbed math=macro:->V_D = 0.7
+====>grabbed math=macro:->V_p = 17
+====>grabbed math=macro:->C = 470
+====>grabbed math=macro:->\mu 
+====>grabbed math=macro:->R_L = 2.2
 ====>grabbed math=macro:->\Omega 
-====>grabbed math=macro:->n = 1
-====>grabbed math=macro:->V_S = 10
-====>grabbed math=macro:->R = 100
-====>grabbed math=macro:->\Omega 
-====>grabbed math=macro:->V_Z = 5. 1
+
+LaTeX Warning: Reference `eq:ripple' on page 7 undefined on input line 351.
+
 
 
 [7] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-<<latex-list-css.html>><<latex-align-css.html>> (./lab01_diodes.aux)
+<<latex-list-css.html>><<latex-align-css.html>> (./lab02_diode_rectifiers.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~353 structure objects
-(tagpdf)             with ~330 'MC' leaf nodes.
+(tagpdf)             Writing out ~419 structure objects
+(tagpdf)             with ~352 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 
 Package tagpdf Info: writing ParentTree
@@ -1166,18 +1186,18 @@ Package tagpdf Info: writing StructElems
 Package tagpdf Info: writing Root
  ) 
 Here is how much of TeX's memory you used:
- 67556 strings out of 467801
- 1769043 string characters out of 5436090
- 2842066 words of memory out of 5000000
- 95320 multiletter control sequences out of 15000+600000
- 657044 words of font info for 79 fonts, out of 8000000 for 9000
+ 68320 strings out of 467801
+ 1791697 string characters out of 5436090
+ 2888689 words of memory out of 5000000
+ 96057 multiletter control sequences out of 15000+600000
+ 659264 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,12n,100p,1076b,1331s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pdftex/pdftexspace.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on lab01_diodes.pdf (7 pages, 283221 bytes).
+ 86i,11n,100p,1042b,1423s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pdftex/pdftexspace.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on lab02_diode_rectifiers.pdf (7 pages, 284535 bytes).
 PDF statistics:
- 894 PDF objects out of 1000 (max. 8388607)
- 737 compressed objects within 8 object streams
- 51 named destinations out of 1000 (max. 500000)
- 2517 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 981 PDF objects out of 1000 (max. 8388607)
+ 827 compressed objects within 9 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 2793 words of extra memory for PDF output out of 10000 (max. 10000000)
 
