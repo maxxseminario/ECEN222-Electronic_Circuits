@@ -57,6 +57,10 @@
 
 
 % Header and footer
+\pagestyle{fancy}
+
+
+% Ensure the plain style (used by \maketitle and some environments) matches
 \fancypagestyle{plain}{
   \fancyhf{}
   \lhead{ECEN 222: Electronic Circuits}
@@ -69,14 +73,28 @@
   \renewcommand\footrulewidth{0.4pt}
 }
 
+% Fancy layout (same as above) for normal pages
+\fancyhf{}
+\lhead{ECEN 222: Electronic Circuits}
+\chead{Lab 1}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+\lfoot{}
+\cfoot{}
+\rfoot{Maxx Seminario, mseminario2@huskers.unl.edu}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+% Avoid head height warnings
+\setlength{\headheight}{14pt}
+
 
 
 \title{\textbf{\Huge I–V Characteristics of PN Junction Diodes and Zener Diodes}\\
 \large Lab 1 — ECEN 222: Electronic Circuits}
 \author{
     % Maxx Seminario\\
-\large University of Nebraska–Lincoln
-\large Department of Electrical and Computer Engineering\\
+\large University of Nebraska–Lincoln \\
+\large Department of Electrical and Computer Engineering
 }
 \date{} % specific date
 
@@ -222,7 +240,6 @@ In this section, you will investigate the behavior of a silicon diode under reve
               to[R, l=$R$, i=$I_D$] (3,3)
               to[D, l=$D$, v=$V_D$, invert] (3,0) % diode flipped (cathode at top, anode at bottom) for reverse bias
               to[short] (0,0);
-        % Ground symbol at the center bottom
         \draw (1.5,0) node[ground]{};
     \end{circuitikz}
     \caption{Reverse-bias pn junction I–V characteristic measurement circuit.}
@@ -246,6 +263,7 @@ You will now investigate the voltage regulation properties of a Zener diode oper
               to[R, l=$R$, i=$I_Z$] (3,3)
               to[zD, l=$D_Z$, v=$V_Z$, invert] (3,0)
               to[short] (0,0);
+        \draw (1.5,0) node[ground]{};
     \end{circuitikz}
     \caption{Zener diode characteristic measurement circuit. The Zener diode is reverse-biased with the cathode toward the positive supply. }
     \label{fig:zener_circuit}

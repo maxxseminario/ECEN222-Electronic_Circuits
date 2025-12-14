@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.2)  13 DEC 2025 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.2)  13 DEC 2025 21:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,28 +906,28 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 84.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 102.
  (./lab01_diodes.aux)
 \openout1 = `lab01_diodes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
 
 Info: mathml file lab01_diodes-mathml does not exist
 Info: mathml file lab01_diodes-luamml-mathml does not exist
@@ -948,7 +948,7 @@ Info: mathml file lab01_diodes-luamml-mathml does not exist
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-32.52127pt
-* \headheight=12.0pt
+* \headheight=14.0pt
 * \headsep=18.06749pt
 * \topskip=10.0pt
 * \footskip=30.0pt
@@ -983,7 +983,7 @@ Info: mathml file lab01_diodes-luamml-mathml does not exist
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 102.
  (c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
  (c:/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
@@ -994,18 +994,18 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 84.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 102.
 
 
 LaTeX DocumentMetadata Warning: The language has not been set in
 (DocumentMetadata)              \DocumentMetadata.
 (DocumentMetadata)              Setting it to 'en' as fallback.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104.
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1048,7 +1048,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ====>grabbed math=macro:->V_D
 ====>grabbed math=macro:->I_D
 ====>grabbed math=macro:->I_D = V_R / R
-Floatstructure:170
+Floatstructure:172
 ====>grabbed math=macro:->\vphantom {+}-
 ====>grabbed math=macro:->+
 ====>grabbed math=macro:->V_S
@@ -1078,7 +1078,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4]
 ====>grabbed math=macro:->\Omega 
-Floatstructure:221
+Floatstructure:223
 ====>grabbed math=macro:->\vphantom {+}-
 ====>grabbed math=macro:->+
 ====>grabbed math=macro:->V_S
@@ -1093,7 +1093,7 @@ Floatstructure:221
 ====>grabbed math=macro:->I_D
 ====>grabbed math=macro:->I_S
 ====>grabbed math=macro:->\Omega 
-Floatstructure:252
+Floatstructure:254
 ====>grabbed math=macro:->\vphantom {+}-
 ====>grabbed math=macro:->+
 ====>grabbed math=macro:->V_S
@@ -1125,10 +1125,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ====>grabbed math=macro:->r_z
 ====>grabbed math=macro:->\Omega 
 ====>grabbed math=macro:->r_z
-====>grabbed math=macro:->r_z
 
 
 [6]
+====>grabbed math=macro:->r_z
 ====>grabbed math=macro:->I_S = 10^{-14}
 ====>grabbed math=macro:->V_T \approx 25
 ====>grabbed math=macro:->V_D = 0.7
@@ -1153,7 +1153,7 @@ L3 programming layer <2025-07-20>
 
 
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~353 structure objects
+(tagpdf)             Writing out ~355 structure objects
 (tagpdf)             with ~330 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 
@@ -1167,17 +1167,17 @@ Package tagpdf Info: writing Root
  ) 
 Here is how much of TeX's memory you used:
  67556 strings out of 467801
- 1769043 string characters out of 5436090
- 2842066 words of memory out of 5000000
+ 1769086 string characters out of 5436090
+ 2844128 words of memory out of 5000000
  95320 multiletter control sequences out of 15000+600000
  657044 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,12n,100p,1076b,1331s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/pdftex/pdftexspace.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on lab01_diodes.pdf (7 pages, 283221 bytes).
+Output written on lab01_diodes.pdf (7 pages, 284932 bytes).
 PDF statistics:
- 894 PDF objects out of 1000 (max. 8388607)
- 737 compressed objects within 8 object streams
+ 902 PDF objects out of 1000 (max. 8388607)
+ 745 compressed objects within 8 object streams
  51 named destinations out of 1000 (max. 500000)
- 2517 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2525 words of extra memory for PDF output out of 10000 (max. 10000000)
 
